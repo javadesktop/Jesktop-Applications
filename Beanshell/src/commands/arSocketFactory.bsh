@@ -6,7 +6,7 @@ bsh.help.arSocketFactory = "usage: arSocketFactory(host, port), returns object";
 */
 Object arSocketFactory(String host, int port) {
 
-        org.apache.commons.altrmi.client.AltrmiFactory af = new org.apache.commons.altrmi.client.impl.ServerClassAltrmiFactory();
+        org.apache.commons.altrmi.client.AltrmiFactory af = new org.apache.commons.altrmi.client.impl.ServerClassAltrmiFactory(true);
         af.setHostContext(new org.apache.commons.altrmi.client.impl.socket.SocketObjectStreamHostContext(host, port));
         return af;
     
