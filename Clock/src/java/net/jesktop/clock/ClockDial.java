@@ -40,7 +40,7 @@ import java.util.*;
  *
  *
  * @author Ravinder Singh & William Beebe
- * @version $Revision: 1.1 $
+ * @version $Revision: 1.2 $
  */
 public class ClockDial extends JPanel implements Runnable {
 
@@ -90,10 +90,20 @@ public class ClockDial extends JPanel implements Runnable {
      */
     public ClockDial() {
 
-        this.setPreferredSize(new Dimension(150, 135));
-
         date_string[2] = ':';
         date_string[5] = ':';
+    }
+
+    public Dimension getPreferredSize() {
+        return new Dimension(150, 135);
+    }
+
+    public Dimension getMinimumSize() {
+        return getPreferredSize();
+    }
+
+    public Dimension getMaximumSize() {
+        return getPreferredSize();
     }
 
     /**
@@ -104,7 +114,7 @@ public class ClockDial extends JPanel implements Runnable {
     public void init() {
 
         x = getSize().width;
-        y = getSize().height;
+        y = 135; //getSize().height;
         center = x / 2;
         background_color = Color.decode("0x66000080");
         clock_face_color = Color.decode("0x000099");
