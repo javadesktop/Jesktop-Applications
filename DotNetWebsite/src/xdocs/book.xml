@@ -11,7 +11,7 @@
   <page id="horstscape" label="HorstScape" source="horstscape.xml"/>
   <page id="horstscape2" label="HorstScape2" source="horstscape2.xml"/>
   <page id="jarutil" label="JarUtil" source="jarutil.xml"/>
-  <page id="jexplorer" label="JExplorer" source="jexplorer.xml"/>
+  <page id="javaexplorer" label="JavaExplorer" source="javaexplorer.xml"/>
   <page id="jcalculator" label="JCalculator" source="jcalculator.xml"/>
   <page id="jcdsee" label="JCDSee" source="jcdsee.xml"/>
   <page id="jdkdemos" label="JDKDemos" source="jdkdemos.xml"/>
