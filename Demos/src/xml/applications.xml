@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <applications>
   <appxml locn="JESKTOP-INF/SwingSet.xml"/>
-  <appxml locn="JESKTOP-INF/JavaSound.xml"/>
   <appxml locn="JESKTOP-INF/Julia.xml"/>
   <appxml locn="JESKTOP-INF/Warped.xml"/>
   <appxml locn="JESKTOP-INF/Mondrian.xml"/>

@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<application type="normal" target="Demos/JDK/JavaSound">
-  <display-name>Java Sound Demo (from JDK)</display-name>
-  <class>net.jesktop.demos.jdksupport.JavaSoundDemo</class>
-  <icons icon32="net/jesktop/demos/jdksupport/JavaSound32.gif"
-    icon16="net/jesktop/demos/jdksupport/JavaSound16.gif" />
-</application>

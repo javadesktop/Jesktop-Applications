@@ -215,8 +215,6 @@ Legal:
     <echo>Debug: JAVA_HOME is ${JAVA_HOME}</echo>
 
     <copy file="/${JAVA_HOME}/demo/jfc/SwingSet2/SwingSet2.jar" todir="build/lib"/>
-    <copy file="/${JAVA_HOME}/demo/sound/JavaSound.jar" todir="build/lib"/>
-
 
     <jar jarfile="dist/Jesktop_Demos.jar">
 
