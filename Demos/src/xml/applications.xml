@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<applications>
+  <appxml locn="JESKTOP-INF/SwingSet.xml"/>
+  <appxml locn="JESKTOP-INF/JavaSound.xml"/>
+  <appxml locn="JESKTOP-INF/Julia.xml"/>
+  <appxml locn="JESKTOP-INF/Warped.xml"/>
+  <appxml locn="JESKTOP-INF/Mondrian.xml"/>
+  <additional-jars>
+    <jar where="contained">lib/SwingSet2.jar</jar>
+    <jar where="contained">lib/JavaSound.jar</jar>
+  </additional-jars>
+</applications>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Demos/AlexWarp">
+  <display-name>Warped Image Manipulator</display-name>
+  <class>net.jesktop.demos.alexwarp.AlexWarpWrapper</class>
+  <icons icon32="net/jesktop/demos/jdksupport/JavaSound32.gif"
+    icon16="net/jesktop/demos/jdksupport/JavaSound16.gif" />
+</application>

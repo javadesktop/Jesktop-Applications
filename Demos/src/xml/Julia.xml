@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Demos/Julia3">
+  <display-name>Julia Set Animation</display-name>
+  <class>net.jesktop.demos.julia3.Julia3Wrapper</class>
+  <icons icon32="net/jesktop/demos/jdksupport/JavaSound32.gif"
+    icon16="net/jesktop/demos/jdksupport/JavaSound16.gif" />
+</application>

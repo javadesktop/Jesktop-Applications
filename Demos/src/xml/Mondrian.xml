@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Demos/Mondrian">
+  <display-name>Mondrian Art Thingy</display-name>
+  <class>net.jesktop.demos.mondrian.Mondrian</class>
+  <icons icon32="net/jesktop/demos/jdksupport/JavaSound32.gif"
+    icon16="net/jesktop/demos/jdksupport/JavaSound16.gif" />
+</application>

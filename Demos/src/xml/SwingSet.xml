@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Demos/JDK/SwingSet2">
+  <display-name>Swing Set Demo (from JDK)</display-name>
+  <class>net.jesktop.demos.jdksupport.SwingSet2Demo</class>
+  <icons icon32="net/jesktop/demos/jdksupport/SwingSet32.gif"
+    icon16="net/jesktop/demos/jdksupport/SwingSet16.gif" />
+</application>
