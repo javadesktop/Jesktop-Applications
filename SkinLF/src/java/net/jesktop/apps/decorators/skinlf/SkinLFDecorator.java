@@ -12,6 +12,7 @@ package net.jesktop.apps.decorators.skinlf;
 import org.jesktop.frimble.Frimble;
 import org.jesktop.api.*;
 import org.jesktop.launchable.*;
+import org.jesktop.Decorator;
 
 import javax.swing.*;
 

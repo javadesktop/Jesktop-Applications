@@ -11,6 +11,7 @@ import org.jesktop.frimble.Frimble;
 import org.jesktop.api.*;
 import org.jesktop.config.*;
 import org.jesktop.launchable.*;
+import org.jesktop.Decorator;
 
 import javax.swing.*;
 
