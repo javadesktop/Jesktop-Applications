@@ -37,7 +37,7 @@
       </p>
       <figure src="images/start01.gif" alt="start01"/>
       <p>
-      	Source in zip form is in <link href="apps_with_source/zips">here</link>.  Source in tar.gz form is in <link href="apps_with_source/targzips">here</link>.  The problem with all source releases is that they contain a full copy of the jars used by ant for building.  In some cases that turns a 17Kb download into a 1.4Mb one.  If bandwith is an issue for you, or you're likely to really want to play with the apps and their source, you'd be better using Perforce to sync with the depot.  See <link href="http://www.jesktop.org/perforce.html">perforce and depot details</link>
+      	Source in zip form is in <link href="apps_with_source/zips">here</link>.  Source in tar.gz form is in <link href="apps_with_source/targzips">here</link>.  The problem with all source releases is that they contain a full copy of the jars used by ant for building.  In some cases that turns a 17Kb download into a 1.4Mb one.  If bandwith is an issue for you, or you're likely to really want to play with the apps and their source, you'd be better using CVS to sync with the repository.  See <link href="http://www.jesktop.org/cvs.html">CVS and repository details</link>
       </p>
     </s1>
   </body>

@@ -4,7 +4,7 @@
   <page id="index" label="Index" source="index.xml"/>
   <page id="downloads" label="Downloads" source="download.xml"/>
   <page id="installation" label="Installation" source="installation.xml"/>
-  <page id="perforce" label="The source depot" source="perforce.xml"/>
+  <page id="cvs" label="The source repository" source="cvs.xml"/>
   <page id="contrib" label="Contributors" source="contributors.xml"/>
   <page id="contact" label="Mail-lists" source="contact.xml"/>
   <page id="volunteers" label="Volunteers" source="volunteers.xml"/>
