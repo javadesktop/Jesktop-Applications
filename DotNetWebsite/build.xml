@@ -21,6 +21,7 @@ Legal:
     <filter token="date" value="${TODAY}"/>
     <mkdir dir="build"/>
     <mkdir dir="build/src"/>
+    <mkdir dir="dist"/>
   </target>
 
   <target name="xdocs" depends="prepare">
@@ -116,7 +117,7 @@ Legal:
     </target> 
 
 
-  <target name="clean">
+  <target name="clean" depends="prepare">
     <delete dir="build"/>
     <delete>
       <fileset dir="dist" includes="**" defaultexcludes="no"/>
