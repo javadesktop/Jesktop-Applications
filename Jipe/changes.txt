@@ -1,0 +1,8 @@
+
+Basic frimbilzation.
+
+  - Main class implements FrimbleAware
+  - calls for JFrame methods routed through frimbe
+  - resource loading code changed to be more friendly to jars.
+
+-PH

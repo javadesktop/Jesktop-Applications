@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE xbookmarks
+[<!ELEMENT xbookmarks ((xfolder | xbookmark)*, (xbookmark | xfolder)*)>
+<!ELEMENT xfolder (title, desc, creationdate, modificationdate, personalfolder?, (xfolder | xbookmark)*, (xbookmark | xfolder)*)>
+<!ELEMENT xbookmark (title, desc, creationdate, modificationdate)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT desc (#PCDATA)>
+<!ELEMENT creationdate (#PCDATA)>
+<!ELEMENT modificationdate (#PCDATA)>
+<!ELEMENT personalfolder EMPTY>
+<!ATTLIST xbookmark href CDATA #REQUIRED>]>
+
+<xbookmarks>
+  <xfolder>
+    <title>Computer</title>
+    <desc />
+    <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+    <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    <xfolder>
+      <title>Java</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      <xbookmark href="http://java.sun.com">
+	<title>java.sun.com - The Source for Java(TM) Technology</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+      <xbookmark href="http://www.jars.com">
+	<title>JARS.COM The #1 Java Review Service</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+      <xbookmark href="http://developer.earthweb.com/directories/pages/dir.java.html">
+	<title>html and java bean web developer resource at developer.com</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+      <xbookmark href="http://www.devdaily.com/java/">
+	<title>developer's daily : java home</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+      <xbookmark href="http://www.gamelan.com">
+	<title>java programming source code and tutorial resource at Gamelan.com</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+      <xbookmark href="http://www.epm.ornl.gov/java/">
+	<title>Java Land</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+      <xbookmark href="http://javaboutique.internet.com/">
+	<title>The Java Boutique: Free Java Applets, Games, Programming Tutorials, and Downloads</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+      <xbookmark href="http://java.wiwi.uni-frankfurt.de/">
+	<title>The Java Repository</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+      <xbookmark href="http://jfa.javalobby.org/index.html">
+	<title>JFA Projects - Construction Zone</title>
+	<desc />
+	<creationdate>Dec 18, 2000 12:11 PM</creationdate>
+	<modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+      </xbookmark>
+    </xfolder>
+    <xbookmark href="http://www.pchelponline.com/">
+      <title>PC Help Online</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://webcrawler.com">
+      <title>WebCrawler</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.computerhistory.org">
+      <title>The Computer Museum History Center</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.w3.org/">
+      <title>The World Wide Web Consortium (W3C)</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.heartlight.org">
+      <title>Heartlight Internet Magazine</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.aol.com">
+      <title>Welcome to AOL.COM</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.byte.com/">
+      <title>BYTE Magazine</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.computerworld.com/">
+      <title>ComputerWorld</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.zdnet.com/pcmag/">
+      <title>PC Magazine</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.pcworld.com">
+      <title>PC World</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+  </xfolder>
+  <xfolder>
+    <title>Search Engines</title>
+    <desc />
+    <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+    <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    <personalfolder />
+    <xbookmark href="http://www.altavista.com/">
+      <title>AltaVista</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.excite.com/">
+      <title>Excite</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://guide-p.infoseek.com">
+      <title>Infoseek</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.lycos.com/">
+      <title>Lycos</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.go2net.com/search.html">
+      <title>MetaCrawler</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.yahoo.com">
+      <title>Yahoo</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+  </xfolder>
+  <xfolder>
+    <title>Entertainment</title>
+    <desc />
+    <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+    <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    <xbookmark href="http://www.filmzone.com/">
+      <title>FilmZone</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.jazzonline.com">
+      <title>Jazz Online</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://mtv.com/index.html">
+      <title>MTV Online</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.realaudio.com">
+      <title>RealAudio Home</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+  </xfolder>
+  <xfolder>
+    <title>News</title>
+    <desc />
+    <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+    <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    <xbookmark href="http://abcnews.go.com">
+      <title>ABC News (US)</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://news.bbc.co.uk/">
+      <title>BBC News (UK)</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.cnn.com">
+      <title>CNN Interactive (US)</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.snap.com">
+      <title>Snap.com</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.the-times.co.uk">
+      <title>The Times (UK)</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://worldnetdaily.com">
+      <title>Worldnet Daily</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+  </xfolder>
+  <xfolder>
+    <title>Directories</title>
+    <desc />
+    <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+    <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    <xbookmark href="http://www.infospace.com">
+      <title>InfoSpace</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://internet800directory.com">
+      <title>Internet 800 Directory</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.switchboard.com">
+      <title>SwitchBoard</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.whowhere.lycos.com/">
+      <title>WhoWhere</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://people.yahoo.com">
+      <title>Yahoo! People Search</title>
+      <desc />
+      <creationdate>Dec 18, 2000 12:11 PM</creationdate>
+      <modificationdate>Dec 18, 2000 12:11 PM</modificationdate>
+    </xbookmark>
+  </xfolder>
+  <xfolder>
+    <title>XBrowser</title>
+    <desc />
+    <creationdate>Mar 5, 2001 10:01 PM</creationdate>
+    <modificationdate>Mar 5, 2001 10:01 PM</modificationdate>
+    <xbookmark href="http://www.geocities.com/xa_arnold/index.html">
+      <title>Java! Java! Java!</title>
+      <desc />
+      <creationdate>Mar 5, 2001 10:01 PM</creationdate>
+      <modificationdate>Mar 5, 2001 10:01 PM</modificationdate>
+    </xbookmark>
+    <xbookmark href="http://www.geocities.com/xa_arnold/XBrowser.html">
+      <title>XBrowser</title>
+      <desc />
+      <creationdate>Mar 5, 2001 10:02 PM</creationdate>
+      <modificationdate>Mar 5, 2001 10:02 PM</modificationdate>
+    </xbookmark>
+  </xfolder>
+</xbookmarks>
+

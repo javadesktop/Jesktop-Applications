@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/JCDSee">
+  <display-name>JCDSee</display-name>
+  <class>jcdsee.main.MainFrame</class>
+  <icons icon32="images/thumb.gif"
+    icon16="images/thumb.gif" />
+</application>

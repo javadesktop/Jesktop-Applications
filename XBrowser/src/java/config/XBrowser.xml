@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE xbrowserconfig SYSTEM 'XBrowser.dtd'>
+
+<xbrowserconfig>
+  <homeurl>http://java.sun.com/</homeurl>
+  <contentstyle name="workbook" />
+  <contenttab place="bottom" />
+  <documentselector visible="true" placement="page1" />
+  <bookmarkpane visible="true" placement="page1" />
+  <historypane visible="true" placement="page2" />
+  <navigationtoolbar />
+  <personaltoolbar />
+  <locationtoolbar />
+  <statusbar />
+  <toolbarstyle style="texticon" />
+  <historyexpirationdays>12</historyexpirationdays>
+  <proxyservers>
+    <httpproxy>
+      <proxyaddress />
+      <proxyport>80</proxyport>
+    </httpproxy>
+    <ftpproxy>
+      <proxyaddress />
+      <proxyport>21</proxyport>
+    </ftpproxy>
+    <gopherproxy>
+      <proxyaddress />
+      <proxyport>70</proxyport>
+    </gopherproxy>
+    <socksproxy>
+      <proxyaddress />
+      <proxyport>1080</proxyport>
+    </socksproxy>
+  </proxyservers>
+  <domaincompletions>
+    <domaincompletion alt="true" ctrl="false" shft="false">
+      <defaultprefix>www.</defaultprefix>
+      <defaultpostfix>.net</defaultpostfix>
+      <prefix>www.</prefix>
+      <postfix>.net</postfix>
+    </domaincompletion>
+    <domaincompletion alt="false" ctrl="true" shft="false">
+      <defaultprefix>www.</defaultprefix>
+      <defaultpostfix>.com</defaultpostfix>
+      <prefix>www.</prefix>
+      <postfix>.com</postfix>
+    </domaincompletion>
+    <domaincompletion alt="false" ctrl="false" shft="true">
+      <defaultprefix>www.</defaultprefix>
+      <defaultpostfix>.edu</defaultpostfix>
+      <prefix>www.</prefix>
+      <postfix>.edu</postfix>
+    </domaincompletion>
+    <domaincompletion alt="false" ctrl="true" shft="true">
+      <defaultprefix>www.</defaultprefix>
+      <defaultpostfix>.gov</defaultpostfix>
+      <prefix>www.</prefix>
+      <postfix>.gov</postfix>
+    </domaincompletion>
+  </domaincompletions>
+  <renderers>
+    <renderer name="Custom Renderer" package="xbrowser.renderer.custom.XCustomRenderer" />
+    <activerenderer name="Custom Renderer" />
+  </renderers>
+  <lookandfeels>
+    <lookandfeel name="CrossPlatform (Java-Metal)" package="*">
+      <theme name="Blue">
+	<primary1>
+	  <color red="83" green="83" blue="126" />
+	</primary1>
+	<primary2>
+	  <color red="132" green="144" blue="179" />
+	</primary2>
+	<primary3>
+	  <color red="172" green="186" blue="214" />
+	</primary3>
+	<secondary1>
+	  <color red="74" green="84" blue="100" />
+	</secondary1>
+	<secondary2>
+	  <color red="134" green="140" blue="153" />
+	</secondary2>
+	<secondary3>
+	  <color red="182" green="196" blue="200" />
+	</secondary3>
+	<black>
+	  <color red="32" green="34" blue="110" />
+	</black>
+	<white>
+	  <color red="242" green="243" blue="244" />
+	</white>
+      </theme>
+      <theme name="Brown">
+	<primary1>
+	  <color red="100" green="79" blue="32" />
+	</primary1>
+	<primary2>
+	  <color red="168" green="159" blue="127" />
+	</primary2>
+	<primary3>
+	  <color red="192" green="183" blue="143" />
+	</primary3>
+	<secondary1>
+	  <color red="98" green="91" blue="78" />
+	</secondary1>
+	<secondary2>
+	  <color red="154" green="150" blue="139" />
+	</secondary2>
+	<secondary3>
+	  <color red="205" green="202" blue="195" />
+	</secondary3>
+	<black>
+	  <color red="61" green="43" blue="19" />
+	</black>
+	<white>
+	  <color red="244" green="240" blue="221" />
+	</white>
+      </theme>
+      <theme name="Charcoal">
+	<primary1>
+	  <color red="33" green="66" blue="66" />
+	</primary1>
+	<primary2>
+	  <color red="66" green="99" blue="99" />
+	</primary2>
+	<primary3>
+	  <color red="99" green="99" blue="99" />
+	</primary3>
+	<secondary1>
+	  <color red="0" green="0" blue="0" />
+	</secondary1>
+	<secondary2>
+	  <color red="51" green="51" blue="51" />
+	</secondary2>
+	<secondary3>
+	  <color red="102" green="102" blue="102" />
+	</secondary3>
+      </theme>
+      <theme name="Dark Blue">
+	<primary1>
+	  <color red="151" green="181" blue="219" />
+	</primary1>
+	<primary2>
+	  <color red="63" green="113" blue="175" />
+	</primary2>
+	<primary3>
+	  <color red="47" green="70" blue="99" />
+	</primary3>
+	<secondary1>
+	  <color red="152" green="166" blue="196" />
+	</secondary1>
+	<secondary2>
+	  <color red="131" green="149" blue="174" />
+	</secondary2>
+	<secondary3>
+	  <color red="80" green="90" blue="107" />
+	</secondary3>
+	<black>
+	  <color red="255" green="255" blue="255" />
+	</black>
+	<white>
+	  <color red="110" green="119" blue="128" />
+	</white>
+      </theme>
+      <theme name="Dark Brown">
+	<primary1>
+	  <color red="195" green="172" blue="139" />
+	</primary1>
+	<primary2>
+	  <color red="105" green="94" blue="84" />
+	</primary2>
+	<primary3>
+	  <color red="76" green="70" blue="63" />
+	</primary3>
+	<secondary1>
+	  <color red="192" green="177" blue="151" />
+	</secondary1>
+	<secondary2>
+	  <color red="153" green="145" blue="133" />
+	</secondary2>
+	<secondary3>
+	  <color red="84" green="79" blue="72" />
+	</secondary3>
+	<black>
+	  <color red="255" green="255" blue="255" />
+	</black>
+	<white>
+	  <color red="112" green="108" blue="103" />
+	</white>
+      </theme>
+      <theme name="Dark Green2">
+	<primary1>
+	  <color red="115" green="164" blue="143" />
+	</primary1>
+	<primary2>
+	  <color red="45" green="95" blue="70" />
+	</primary2>
+	<primary3>
+	  <color red="151" green="192" blue="170" />
+	</primary3>
+	<secondary1>
+	  <color red="151" green="192" blue="170" />
+	</secondary1>
+	<secondary2>
+	  <color red="128" green="170" blue="149" />
+	</secondary2>
+	<secondary3>
+	  <color red="64" green="82" blue="76" />
+	</secondary3>
+	<black>
+	  <color red="255" green="255" blue="255" />
+	</black>
+	<white>
+	  <color red="108" green="124" blue="116" />
+	</white>
+      </theme>
+      <theme name="Emerald">
+	<primary1>
+	  <color red="51" green="102" blue="51" />
+	</primary1>
+	<primary2>
+	  <color red="102" green="153" blue="102" />
+	</primary2>
+	<primary3>
+	  <color red="153" green="204" blue="153" />
+	</primary3>
+      </theme>
+      <theme name="Fusia">
+	<primary1>
+	  <color red="153" green="127" blue="102" />
+	</primary1>
+	<primary2>
+	  <color red="153" green="129" blue="105" />
+	</primary2>
+	<primary3>
+	  <color red="191" green="165" blue="139" />
+	</primary3>
+	<secondary1>
+	  <color red="107" green="107" blue="107" />
+	</secondary1>
+	<secondary2>
+	  <color red="158" green="158" blue="158" />
+	</secondary2>
+	<secondary3>
+	  <color red="219" green="198" blue="176" />
+	</secondary3>
+	<black>
+	  <color red="58" green="52" blue="45" />
+	</black>
+	<white>
+	  <color red="242" green="236" blue="230" />
+	</white>
+      </theme>
+      <theme name="Fusia2">
+	<primary1>
+	  <color red="153" green="102" blue="118" />
+	</primary1>
+	<primary2>
+	  <color red="153" green="105" blue="120" />
+	</primary2>
+	<primary3>
+	  <color red="188" green="137" blue="153" />
+	</primary3>
+	<secondary1>
+	  <color red="107" green="107" blue="107" />
+	</secondary1>
+	<secondary2>
+	  <color red="158" green="158" blue="158" />
+	</secondary2>
+	<secondary3>
+	  <color red="216" green="173" blue="187" />
+	</secondary3>
+	<black>
+	  <color red="56" green="43" blue="47" />
+	</black>
+	<white>
+	  <color red="239" green="230" blue="233" />
+	</white>
+      </theme>
+      <theme name="Green">
+	<primary1>
+	  <color red="8" green="80" blue="44" />
+	</primary1>
+	<primary2>
+	  <color red="12" green="140" blue="38" />
+	</primary2>
+	<primary3>
+	  <color red="153" green="188" blue="159" />
+	</primary3>
+	<secondary1>
+	  <color red="0" green="0" blue="0" />
+	</secondary1>
+	<secondary2>
+	  <color red="140" green="140" blue="140" />
+	</secondary2>
+	<secondary3>
+	  <color red="195" green="216" blue="188" />
+	</secondary3>
+      </theme>
+      <theme name="Green2">
+	<primary1>
+	  <color red="74" green="110" blue="85" />
+	</primary1>
+	<primary2>
+	  <color red="132" green="177" blue="147" />
+	</primary2>
+	<primary3>
+	  <color red="172" green="225" blue="191" />
+	</primary3>
+	<secondary1>
+	  <color red="35" green="99" blue="55" />
+	</secondary1>
+	<secondary2>
+	  <color red="127" green="153" blue="132" />
+	</secondary2>
+	<secondary3>
+	  <color red="192" green="204" blue="190" />
+	</secondary3>
+	<black>
+	  <color red="31" green="90" blue="32" />
+	</black>
+	<white>
+	  <color red="238" green="249" blue="236" />
+	</white>
+      </theme>
+      <theme name="HardBlue">
+	<primary1>
+	  <color red="71" green="107" blue="178" />
+	</primary1>
+	<primary2>
+	  <color red="102" green="153" blue="255" />
+	</primary2>
+	<primary3>
+	  <color red="145" green="218" blue="255" />
+	</primary3>
+	<secondary1>
+	  <color red="57" green="93" blue="164" />
+	</secondary1>
+	<secondary2>
+	  <color red="82" green="133" blue="235" />
+	</secondary2>
+      </theme>
+      <theme name="HardGreen">
+	<primary1>
+	  <color red="53" green="142" blue="107" />
+	</primary1>
+	<primary2>
+	  <color red="51" green="204" blue="153" />
+	</primary2>
+	<primary3>
+	  <color red="72" green="255" blue="218" />
+	</primary3>
+	<secondary1>
+	  <color red="21" green="128" blue="93" />
+	</secondary1>
+	<secondary2>
+	  <color red="31" green="184" blue="133" />
+	</secondary2>
+      </theme>
+      <theme name="HardPurple">
+	<primary1>
+	  <color red="178" green="0" blue="178" />
+	</primary1>
+	<primary2>
+	  <color red="255" green="0" blue="255" />
+	</primary2>
+	<primary3>
+	  <color red="255" green="0" blue="255" />
+	</primary3>
+	<secondary1>
+	  <color red="164" green="0" blue="164" />
+	</secondary1>
+	<secondary2>
+	  <color red="235" green="0" blue="235" />
+	</secondary2>
+      </theme>
+      <theme name="HardRed">
+	<primary1>
+	  <color red="142" green="35" blue="0" />
+	</primary1>
+	<primary2>
+	  <color red="204" green="51" blue="0" />
+	</primary2>
+	<primary3>
+	  <color red="255" green="72" blue="0" />
+	</primary3>
+	<secondary1>
+	  <color red="128" green="21" blue="0" />
+	</secondary1>
+	<secondary2>
+	  <color red="184" green="31" blue="0" />
+	</secondary2>
+      </theme>
+      <theme name="HardYellow">
+	<primary1>
+	  <color red="178" green="142" blue="0" />
+	</primary1>
+	<primary2>
+	  <color red="255" green="204" blue="0" />
+	</primary2>
+	<primary3>
+	  <color red="255" green="255" blue="0" />
+	</primary3>
+	<secondary1>
+	  <color red="164" green="128" blue="0" />
+	</secondary1>
+	<secondary2>
+	  <color red="235" green="184" blue="0" />
+	</secondary2>
+      </theme>
+      <theme name="Oxide">
+	<primary1>
+	  <color red="102" green="153" blue="153" />
+	</primary1>
+	<primary2>
+	  <color red="128" green="192" blue="192" />
+	</primary2>
+	<primary3>
+	  <color red="159" green="235" blue="235" />
+	</primary3>
+      </theme>
+      <theme name="Red">
+	<primary1>
+	  <color red="100" green="35" blue="7" />
+	</primary1>
+	<primary2>
+	  <color red="240" green="171" blue="171" />
+	</primary2>
+	<primary3>
+	  <color red="247" green="180" blue="171" />
+	</primary3>
+	<secondary1>
+	  <color red="0" green="0" blue="0" />
+	</secondary1>
+	<secondary2>
+	  <color red="130" green="130" blue="130" />
+	</secondary2>
+	<secondary3>
+	  <color red="244" green="204" blue="197" />
+	</secondary3>
+      </theme>
+      <theme name="Ruby">
+	<primary1>
+	  <color red="80" green="10" blue="22" />
+	</primary1>
+	<primary2>
+	  <color red="193" green="10" blue="44" />
+	</primary2>
+	<primary3>
+	  <color red="244" green="10" blue="66" />
+	</primary3>
+      </theme>
+      <theme name="Sable">
+	<primary1>
+	  <color red="153" green="144" blue="102" />
+	</primary1>
+	<primary2>
+	  <color red="155" green="147" blue="108" />
+	</primary2>
+	<primary3>
+	  <color red="196" green="187" blue="143" />
+	</primary3>
+	<secondary1>
+	  <color red="107" green="107" blue="107" />
+	</secondary1>
+	<secondary2>
+	  <color red="158" green="158" blue="158" />
+	</secondary2>
+	<secondary3>
+	  <color red="226" green="219" blue="181" />
+	</secondary3>
+	<black>
+	  <color red="63" green="61" blue="49" />
+	</black>
+	<white>
+	  <color red="247" green="244" blue="232" />
+	</white>
+      </theme>
+      <theme name="Sandstone">
+	<primary1>
+	  <color red="87" green="87" blue="47" />
+	</primary1>
+	<primary2>
+	  <color red="159" green="151" blue="111" />
+	</primary2>
+	<primary3>
+	  <color red="199" green="183" blue="143" />
+	</primary3>
+	<secondary1>
+	  <color red="111" green="111" blue="111" />
+	</secondary1>
+	<secondary2>
+	  <color red="159" green="159" blue="159" />
+	</secondary2>
+	<secondary3>
+	  <color red="231" green="215" blue="183" />
+	</secondary3>
+      </theme>
+      <theme name="SoftBlue">
+	<primary1>
+	  <color red="71" green="107" blue="178" />
+	</primary1>
+	<primary2>
+	  <color red="102" green="153" blue="255" />
+	</primary2>
+	<primary3>
+	  <color red="145" green="218" blue="255" />
+	</primary3>
+      </theme>
+      <theme name="SoftGreen">
+	<primary1>
+	  <color red="35" green="142" blue="107" />
+	</primary1>
+	<primary2>
+	  <color red="51" green="204" blue="153" />
+	</primary2>
+	<primary3>
+	  <color red="72" green="255" blue="218" />
+	</primary3>
+      </theme>
+      <theme name="SoftPurple">
+	<primary1>
+	  <color red="178" green="0" blue="178" />
+	</primary1>
+	<primary2>
+	  <color red="255" green="0" blue="255" />
+	</primary2>
+	<primary3>
+	  <color red="255" green="0" blue="255" />
+	</primary3>
+      </theme>
+      <theme name="SoftRed">
+	<primary1>
+	  <color red="142" green="35" blue="0" />
+	</primary1>
+	<primary2>
+	  <color red="204" green="51" blue="0" />
+	</primary2>
+	<primary3>
+	  <color red="255" green="72" blue="0" />
+	</primary3>
+      </theme>
+      <theme name="SoftYellow">
+	<primary1>
+	  <color red="178" green="142" blue="0" />
+	</primary1>
+	<primary2>
+	  <color red="255" green="204" blue="0" />
+	</primary2>
+	<primary3>
+	  <color red="255" green="255" blue="0" />
+	</primary3>
+      </theme>
+      <theme name="Steel" />
+      <activetheme name="Sandstone" />
+    </lookandfeel>
+    <lookandfeel name="Mac" package="com.sun.java.swing.plaf.mac.MacLookAndFeel" />
+    <lookandfeel name="MacOS X (Aqua)" package="com.apple.mrj.swing.MacLookAndFeel" />
+    <lookandfeel name="Motif" package="com.sun.java.swing.plaf.motif.MotifLookAndFeel" />
+    <lookandfeel name="Native" package="*" />
+    <lookandfeel name="Windows" package="com.sun.java.swing.plaf.windows.WindowsLookAndFeel" />
+    <activelnf name="CrossPlatform (Java-Metal)" />
+  </lookandfeels>
+</xbrowserconfig>
+

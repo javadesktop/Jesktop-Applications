@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/JFileManager">
+  <display-name>JFileManager</display-name>
+  <class>jfilemanager.JFileManager</class>
+</application>

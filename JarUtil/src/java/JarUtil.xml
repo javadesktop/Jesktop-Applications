@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/JarUtil">
+  <display-name>Jar Utility</display-name>
+  <class>ranab.jar.MyJarUtil</class>
+  <icons icon32="ranab/JarUtil32.gif"
+    icon16="ranab/JarUtil16.gif" />
+</application>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<applications>
+  <default-application target-name="Tools/JCDSee"
+    icon32="images/thumb.gif"
+    icon16="images/thumb.gif"/>
+  <appxml locn="JESKTOP-INF/JCDSee.xml"/>
+</applications>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<applications>
+  <appxml locn="JESKTOP-INF/Jipe.xml"/>
+  <appxml locn="JESKTOP-INF/ClassBrowser.xml"/>
+  <additional-jars>
+    <jar where="contained">libs/tools.jar</jar>
+  </additional-jars>
+</applications>

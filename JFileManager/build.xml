@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+
+<!--
+==============================================================================
+
+ JFileManager (Jesktop) build file
+
+Authors:
+ Paul Hammant <Paul_Hammant@yahoo.com>
+
+Legal:
+  Copyright (c) 2001 The Apache Software Foundation. All Rights Reserved.
+
+==============================================================================
+-->
+
+<project default="main" basedir=".">
+
+  <!--
+    Give user a chance to override without editing this file
+    (and without typing -D each time he compiles it)
+  -->
+  <property file=".ant.properties"/>
+  <property file="${user.home}/.ant.properties"/>
+
+  <property name="name" value="jpad"/>
+  <property name="Name" value="JFileManager (Jesktop)"/>
+  <property name="version" value="1.0a1-dev"/>
+  <property name="year" value="2000"/>
+
+  <!--
+    these are here only for those who use jikes compiler. For other
+    developers this part makes no difference.
+  -->
+  <property name="build.compiler.emacs" value="on"/>
+  <property name="build.compiler.warnings" value="true"/>
+  <property name="build.compiler.pedantic" value="true"/>
+  <property name="build.compiler.depend" value="true"/>
+
+  <property name="debug" value="on"/>
+  <property name="optimize" value="off"/>
+  <property name="deprecation" value="on"/>
+
+  <property name="build.dir" value="build"/>
+  <property name="build.lib" value="${build.dir}/lib"/>
+  <property name="build.src" value="${build.dir}/src"/>
+  <property name="build.classes" value="${build.dir}/classes"/>
+  <property name="build.classes.lib" value="${build.dir}/classes/lib"/>
+
+  <property name="src.base" value="src"/>
+  <property name="src.dir" value="${src.base}/java"/>
+  <property name="lib.dir" value="lib"/>
+
+  <property name="docs.dir" value="docs"/>
+
+
+
+
+  <!--
+       ===================================================================
+                                  Main target
+       ===================================================================
+  -->
+  <target name="main" depends="jar"/>
+
+  <!--
+       ===================================================================
+                                  Help on usage
+       ===================================================================
+  -->
+  <target name="usage">
+    <echo message=""/>
+    <echo message="${Name} Build file"/>
+    <echo message="-------------------------------------------------------------"/>
+    <echo message=""/>
+    <echo message=" available targets are:"/>
+    <echo message=""/>
+    <echo message="   build      --> generates the installable jar file in this dirtectory"/>
+    <echo message="   dist       --> creates a zip in the parent directory for distribution"/>
+    <echo message="   clean      --> cleans up the created directories"/>
+    <echo message="   real-clean --> cleans up all genereated files and directories"/>
+    <echo message=""/>
+    <echo message="-------------------------------------------------------------"/>
+    <echo message=""/>
+  </target>
+
+  <target name="help" depends="usage"/>
+
+  <!--
+       ===================================================================
+                  Checks the environment for existing resources
+       ===================================================================
+  -->
+  <target name="check-environment">
+    <available property="test-task.present" classname="org.apache.tools.ant.taskdefs.Test" />
+    <available property="stylebook-task.present"
+               classname="org.apache.tools.ant.taskdefs.StyleBook" />
+    <available property="xalan.present" classname="org.apache.xalan.xpath.XPath" />
+    <available property="jsse.present" classname="javax.net.ssl.SSLServerSocket" />
+  </target>
+
+  <!--
+       ===================================================================
+                         Prepares the build directory
+       ===================================================================
+  -->
+  <target name="prepare" depends="check-environment">
+    <tstamp/>
+    <filter token="year" value="${year}"/>
+    <filter token="version" value="${version}"/>
+    <filter token="date" value="${TODAY}"/>
+    <filter token="log" value="true"/>
+    <filter token="verbose" value="true"/>
+    <mkdir dir="${build.dir}"/>
+    <mkdir dir="${build.dir}/classes/lib"/>
+
+  </target>
+
+  <!--
+       ===================================================================
+                           Prepares the library code
+       ===================================================================
+   -->
+  <target name="prepare-lib" depends="prepare">
+    <mkdir dir="${build.lib}"/>
+    <!-- <copy file="${lib.dir}/xerces.jar" todir="${build.lib}"/> -->
+  </target>
+
+  <!--
+       ===================================================================
+                           Prepares the source code
+       ===================================================================
+   -->
+  <target name="prepare-src" depends="prepare">
+    <mkdir dir="${build.src}"/>
+    <copy todir="${build.src}">
+      <fileset dir="${src.dir}">
+        <!-- <exclude name="org/apache/avalon/util/i18n/**"/> -->
+      </fileset>
+    </copy>
+  </target>
+
+
+  <!--
+       ===================================================================
+                   Check, warn and import the dependant jars
+       ===================================================================
+   -->
+  <target name="check-imports">
+    <available file="lib/jesktop-frimble.jar" property="frimblejar.present" />
+  </target>
+  <target name="warn-imports" depends="check-imports" unless="frimblejar.present">
+    <antcall target="import"/>
+  </target>
+  <target name="import">
+    <copy todir="lib">
+        <fileset dir="../API/dist/export">
+          <include name="jesktop-frimble.jar" />
+        </fileset>
+    </copy>
+  </target>
+
+  <!--
+       ===================================================================
+                        Compiles the source code
+       ===================================================================
+  -->
+  <target name="compile" depends="prepare-src,prepare-lib, warn-imports">
+
+    <mkdir dir="${build.classes}"/>
+
+    <javac srcdir="${build.src}"
+           destdir="${build.classes}"
+           debug="${debug}"
+           optimize="${optimize}"
+           deprecation="${deprecation}">
+      <classpath>
+        <fileset dir="${lib.dir}">
+          <include name="*.jar" />
+          <include name="*.zip" />
+        </fileset>
+      </classpath>
+    </javac>
+
+    <copy todir="${build.classes}">
+      <fileset dir="${build.src}">
+        <include name="**/*.properties"/>
+        <include name="**/*.usage"/>
+      </fileset>
+      <fileset dir="src">
+        <include name="**/*.gif"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.html"/>
+      </fileset>
+    </copy>
+
+    <copy todir="${build.classes}">
+      <fileset dir=".">
+        <include name="*.txt"/>
+      </fileset>
+    </copy>
+
+  </target>
+
+
+
+
+  <!--
+       ===================================================================
+                          Creates the JFileManager .jar file
+       ===================================================================
+
+       TODO - this should be a executable jar.
+
+  -->
+
+
+  <target name="jar" depends="compile">
+
+    <mkdir dir="dist"/>
+
+    <copy todir="${build.classes}/JESKTOP-INF">
+      <fileset dir="src/xml">
+        <include name="*.xml"/>
+      </fileset>
+    </copy>
+    <jar jarfile="dist/Jesktop_JFileManager.jar"
+         basedir="${build.classes}">
+      <include name="JESKTOP-INF/*.xml"/>
+      <include name="jfilemanager/**"/>
+      <fileset dir="src/java">
+        <include name="**/*.gif"/>
+      </fileset>
+    </jar>
+  </target>
+
+
+  <!--
+       ===================================================================
+                 Makes a distribution zip.
+       ===================================================================
+  -->
+  <target name="dist" depends="real-clean, jar" >
+
+    <mkdir dir="dist"/>
+
+    <zip zipfile="dist/Jesktop_JFileManager_FullSourceDistribution.zip"
+         basedir=".">
+      <exclude name="dist/**"/>
+      <exclude name="build/**"/>
+    </zip>
+
+    <tar tarfile="dist/Jesktop_JFileManager_FullSourceDistribution.tar"
+         basedir=".">
+      <exclude name="dist/**"/>
+      <exclude name="build/**"/>
+    </tar>
+    <gzip zipfile="dist/Jesktop_JFileManager_FullSourceDistribution.tar.gz"
+          src="dist/Jesktop_JFileManager_FullSourceDistribution.tar"
+    />
+    <delete file="dist/Jesktop_JFileManager_FullSourceDistribution.tar" />
+
+  </target>
+
+
+
+  <!--
+       ===================================================================
+                 Cleans up build and distribution directories
+       ===================================================================
+  -->
+  <target name="clean">
+    <delete dir="${build.dir}"/>
+    <delete dir="${dist.dir}"/>
+    <delete>
+      <fileset dir="." includes="**/*~" defaultexcludes="no"/>
+    </delete>
+  </target>
+
+  <!--
+       ===================================================================
+                      Cleans absolutely everything up
+       ===================================================================
+  -->
+  <target name="real-clean" depends="clean">
+    <delete file="dist/**"/>
+  </target>
+</project>

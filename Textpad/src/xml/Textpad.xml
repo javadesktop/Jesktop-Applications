@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/Textpad" single-instance="true">
+  <display-name>Text Pad (Giant Java Tree)</display-name>
+  <class>net.jesktop.textpad.Textpad</class>
+</application>  

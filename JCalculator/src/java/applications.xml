@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<applications>
+  <default-application target-name="Tools/Calculator" 
+    icon32="calc/Calc32.gif" 
+    icon16="calc/Calc16.gif"/>
+  <appxml locn="JESKTOP-INF/JCalculator.xml"/> 
+</applications>

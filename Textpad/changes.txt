@@ -1,0 +1,34 @@
+
+Original software by Dr M.L.Noone and contributors on the
+Giant Java Tree (www.gjt.org)
+
+============================================================
+
+Changes to Textpad upon forking into Jesktop, Nov 29th 2000
+Forked by Paul Hammant.  
+Repackaged to org.jesktop.textpad, but will hapily give back 
+changes to Dr M.L.Noone and surrender fork back to the GJT 
+if jesktop compatability continued.
+============================================================
+
+Textpad.java
+------------
+
+1) implements Frimble, has setFrimble, uses frimbleClosing instead of windowClosing
+
+2) startTextpad() method created as main is not always called
+
+3) TextpadUtils is now no longer statically called
+
+4) postConstruction() method created (hooks in with setFrimble())
+
+TextpadUtils.java
+-----------------
+
+1) Class no longer static,
+
+  - has a constructor
+  
+  - methods public
+  
+  - member vars no longer static, but still private.

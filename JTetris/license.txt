@@ -1,0 +1,46 @@
+
+--- Yang Kok Wah <kwyang@cyberway.com.sg> wrote: > Hi,
+> 
+> I'm happy to know that you like JTetris.
+> 
+> I 've not really thought about licensing and do not know how to go about
+> doing it.
+> 
+> As for now, yes, it is "free for all uses".
+> 
+> In the coming week, I may be adding a new feature to the game.
+> 
+> I am working on allowing the user to design and use their own tetris pieces.
+> Should  be ready before June.
+> 
+> Looking forward to your support...
+> 
+> 
+> 
+> Regards
+> 
+> Yang Kok Wah
+> 
+> 
+> 
+> 
+> ----- Original Message -----
+> From: "Paul Hammant" <paul_hammant@yahoo.com>
+> To: <kwyang@cyberway.com.sg>
+> Sent: Sunday, May 20, 2001 6:12 PM
+> Subject: JTetris / license
+> 
+> 
+> > Kok,
+> >
+> > Hello, your JTetris game is very cool. It is good Swing programing....
+> >
+> > There is no mention of a license.  Are you going to choose one (BSD, MIT,
+> GPL, Apache, MPL, SPL,
+> > X11) ?  Or are you going to keep it without license i.e. "Free for all
+> uses"?
+> >
+> > Regards,
+> >
+> > - Paul H
+> >

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: xbrowser.screen.XBrowserLayout
+Name: "XBrowser"
+Created-By: "Armond Avanes <Armond@Neda.net>"
+Implementation-Vendor: "Neda.net"
+Class-Path: lib/jaxp.jar lib/parser.jar
+Implementation-Version: "3.3.fork"
+Implementation-Title: "XBrowser"

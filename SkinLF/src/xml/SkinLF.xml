@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="decorator" target="Tools/Decorators/@Theme@">
+  <icons icon32="resources/@Theme@.gif"
+    icon16="resources/@Theme@.gif" />
+  <display-name>@Theme@ Skin look and Feel</display-name>
+  <class>net.jesktop.apps.decorators.skinlf.SkinLFDecorator</class>
+</application>

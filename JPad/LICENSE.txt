@@ -1,0 +1,42 @@
+                                 LICENSE
+                     JPad, the Cross-Platform ASCII editor
+                                Version 1.00
+
+ Free software License agreement.
+ You should carefully read the following terms and conditions before
+ using this software.
+
+ The Author grants you ('Licensee') a non-exclusive, royalty free,
+ License to use, modify and redistribute this software in source and
+ binary code form, provided that this license notice appear on all
+ copies of this software.
+
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR 'AS IS' WITHOUT A WARRANTY OF
+ ANY KIND. THE AUTHOR SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY
+ LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THE SOFTWARE
+ OR ITS DERIVATIVES. IN NO EVENT THE AUTHOR WILL BE LIABLE FOR ANY LOST
+ REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL,
+ INCIDENTAL OR PUNITIVE DAMAGES.
+
+ 'Licensee' acquires only the right to use Programs and does not acquire
+ any rights, express or implied, in Programs.
+
+ This Agreement is effective until terminated.  You may terminate this
+ Agreement at any time by destroying all copies of Software. Upon
+ Termination, you must destroy all copies of Software.
+
+ No Technical Support. The Author is not obligated to provide technical
+ support or phone support for this software under this license agreement.
+ However you can mail to me to report any bugs in software.
+
+ Software may contain source code that is provided solely for reference
+ purposes pursuant to the terms of this Agreement.
+
+ All trademarks and copyrights referred to are the property of their
+ respective owners.
+
+ The Author encourages wide distribution of this software for personal or
+ Commercial use provided the above license notice remains intact.
+
+ Software Designed & Developed by HariKrishna
+ Can be contacted at javapro@onebox.com

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: net.jesktop.jpad.JPad
+Name: "JPad"
+Created-By: "hari_8@yahoo.com"
+Implementation-Vendor: "http://www.hari8.net & www.jesktop.org"
+Implementation-Version: "1.0.0"
+Implementation-Title: "JPad 1.0"
+

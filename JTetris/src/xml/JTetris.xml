@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<application type="normal" target="Games/JTetris">
+  <display-name>JTetris</display-name>
+  <class>JTetrisLauncher</class>
+</application>  

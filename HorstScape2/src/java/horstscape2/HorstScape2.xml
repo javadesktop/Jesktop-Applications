@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/Browsers/Commercial/HorstScape2">
+  <display-name>HorstScape2</display-name>
+  <class>Browser</class>
+  <icons icon32="horstscape2/earth32.gif"
+    icon16="horstscape2/earth16.gif" />
+</application>  

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/Calculator">
+  <display-name>Calculator</display-name>
+  <class>calc.Calculator</class>
+  <icons icon32="calc/Calc32.gif"
+    icon16="calc/Calc16.gif" />
+</application>  

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<applications>
+  <appxml locn="JESKTOP-INF/Oyoaha.xml"/>
+  <appxml locn="JESKTOP-INF/OyoahaConfig.xml"/>
+  <additional-jars>
+    <jar where="contained">lib/oyoahalnf.jar</jar>
+  </additional-jars>
+</applications>

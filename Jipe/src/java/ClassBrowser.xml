@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/IDEs/Jipe/ClassBrowser">
+  <display-name>ClassBrowser</display-name>
+  <class>net.jesktop.jipe.ClassBrowser</class>
+</application>

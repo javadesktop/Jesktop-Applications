@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<applications>
+  <default-application target-name="Tools/Textpad"
+    icon32="net/jesktop/textpad/resources/textpad.gif"
+    icon16="net/jesktop/textpad/resources/textpad16.gif"/>
+  <appxml locn="JESKTOP-INF/Textpad.xml"/>    
+</applications>

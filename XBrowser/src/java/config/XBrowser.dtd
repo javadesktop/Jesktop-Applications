@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT xbrowserconfig (homeurl?, contentstyle?, contenttab, documentselector, bookmarkpane, historypane, startswithhomepage?, navigationtoolbar?, personaltoolbar?, locationtoolbar?, statusbar?, toolbarstyle, historyexpirationdays, proxyservers, proxyexceptions?, authentication?, domaincompletions, renderers, lookandfeels)>
+
+<!ELEMENT homeurl (#PCDATA)>
+
+<!ELEMENT contentstyle EMPTY>
+<!ELEMENT contenttab EMPTY>
+
+<!ELEMENT documentselector EMPTY>
+<!ELEMENT bookmarkpane EMPTY>
+<!ELEMENT historypane EMPTY>
+
+<!ELEMENT navigationtoolbar EMPTY>
+<!ELEMENT personaltoolbar EMPTY>
+<!ELEMENT locationtoolbar EMPTY>
+<!ELEMENT statusbar EMPTY>
+<!ELEMENT toolbarstyle EMPTY>
+
+<!ELEMENT startswithhomepage EMPTY>
+
+<!ELEMENT historyexpirationdays (#PCDATA)>
+
+<!ELEMENT proxyservers (httpproxy,ftpproxy,gopherproxy,socksproxy)>
+<!ELEMENT httpproxy (useproxy?,proxyaddress,proxyport)>
+<!ELEMENT ftpproxy (useproxy?,proxyaddress,proxyport)>
+<!ELEMENT gopherproxy (useproxy?,proxyaddress,proxyport)>
+<!ELEMENT socksproxy (useproxy?,proxyaddress,proxyport)>
+<!ELEMENT useproxy EMPTY>
+<!ELEMENT proxyaddress (#PCDATA)>
+<!ELEMENT proxyport (#PCDATA)>
+
+<!ELEMENT proxyexceptions (#PCDATA)>
+
+<!ELEMENT authentication (username,password)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+
+<!ELEMENT domaincompletions (domaincompletion*)>
+<!ELEMENT domaincompletion (defaultprefix, defaultpostfix, prefix, postfix)>
+<!ELEMENT defaultprefix (#PCDATA)>
+<!ELEMENT defaultpostfix (#PCDATA)>
+<!ELEMENT prefix (#PCDATA)>
+<!ELEMENT postfix (#PCDATA)>
+
+<!ELEMENT renderers (renderer+,activerenderer)>
+<!ELEMENT renderer EMPTY>
+<!ELEMENT activerenderer EMPTY>
+
+<!ELEMENT lookandfeels (lookandfeel+,activelnf)>
+<!ELEMENT activelnf EMPTY>
+<!ELEMENT lookandfeel (theme*,activetheme?)>
+<!ELEMENT activetheme EMPTY>
+<!ELEMENT theme (primary1?,primary2?,primary3?,secondary1?,secondary2?,secondary3?,black?,white?)>
+<!ELEMENT primary1 (color)>
+<!ELEMENT primary2 (color)>
+<!ELEMENT primary3 (color)>
+<!ELEMENT secondary1 (color)>
+<!ELEMENT secondary2 (color)>
+<!ELEMENT secondary3 (color)>
+<!ELEMENT black (color)>
+<!ELEMENT white (color)>
+<!ELEMENT color EMPTY>
+
+<!ATTLIST contentstyle name (desktoppane|tabbedpane|workbook) #REQUIRED>
+<!ATTLIST contenttab place (top|bottom|left|right) #REQUIRED>
+
+<!ATTLIST documentselector placement (page1|page2|page3) #REQUIRED>
+<!ATTLIST documentselector visible (true|false) #REQUIRED>
+
+<!ATTLIST bookmarkpane placement (page1|page2|page3) #REQUIRED>
+<!ATTLIST bookmarkpane visible (true|false) #REQUIRED>
+
+<!ATTLIST historypane placement (page1|page2|page3) #REQUIRED>
+<!ATTLIST historypane visible (true|false) #REQUIRED>
+
+<!ATTLIST toolbarstyle style (icononly|textonly|texticon) #REQUIRED>
+
+<!ATTLIST domaincompletion alt (true|false) #REQUIRED>
+<!ATTLIST domaincompletion ctrl (true|false) #REQUIRED>
+<!ATTLIST domaincompletion shft (true|false) #REQUIRED>
+
+<!ATTLIST renderer name CDATA #REQUIRED>
+<!ATTLIST renderer package CDATA #REQUIRED>
+<!ATTLIST renderer resource CDATA #IMPLIED>
+<!ATTLIST activerenderer name CDATA #REQUIRED>
+
+<!ATTLIST lookandfeel name CDATA #REQUIRED>
+<!ATTLIST lookandfeel package CDATA #REQUIRED>
+<!ATTLIST lookandfeel resource CDATA #IMPLIED>
+<!ATTLIST activelnf name CDATA #REQUIRED>
+<!ATTLIST theme name CDATA #REQUIRED>
+<!ATTLIST activetheme name CDATA #REQUIRED>
+<!ATTLIST color red CDATA #REQUIRED>
+<!ATTLIST color green CDATA #REQUIRED>
+<!ATTLIST color blue CDATA #REQUIRED>

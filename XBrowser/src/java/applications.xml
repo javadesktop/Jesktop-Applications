@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<applications>
+  <appxml locn="JESKTOP-INF/XBrowser.xml"/>
+  <additional-jars>
+    <jar where="contained">lib/jaxp.jar</jar>   
+    <jar where="contained">lib/parser.jar</jar>   
+  </additional-jars>  
+</applications>

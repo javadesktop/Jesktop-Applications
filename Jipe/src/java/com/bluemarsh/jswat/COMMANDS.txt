@@ -1,0 +1,35 @@
+JSWAT COMMANDS LIST
+======================================================================
+$Id: COMMANDS.txt,v 1.1.1.1 2002-01-11 08:50:24 paul-h Exp $
+
+The following is a list of commands that are to be supported by JSwat.
+As each command is implemented, it will be removed from this list.
+The list of commands supported by JSwat is available by typing
+"help commands" at the JSwat command prompt.
+
+threads [threadgroup]   -- print threads in a thread group
+
+[un]monitor <expr>      -- execute command each time program stops
+                           (support more than one monitor; number them)
+runto <class id>:<line> -- run to a line in a class (this one is tricky,
+                           it must set a breakpoint, then clear it when
+                           the breakpoint has been hit)
+set <lvalue> = <expr>   -- assign new value to field/var/array element
+                           (how to create a Value object?)
+list <line>|<method>    -- print source code context at line or method
+[un]trace [go|thread] methods <thread>
+                        -- watch method entry/exit events
+[un]watch [go|thread] access|all <member>
+                        -- watch data member access
+exclude [<class> ...|none]
+                        -- exlude step or method events for given classes
+invoke <objref>.<method>(args[,...])
+                        -- invoke given method
+bytecodes <class>.<method>
+                        -- display bytecodes of a method
+
+
+Not currently able to implement
+----------------------------------------------------------------------
+kill <thread(group)>    -- kill a thread or threadgroup
+                           (need to be able to suspend thread inside VM)

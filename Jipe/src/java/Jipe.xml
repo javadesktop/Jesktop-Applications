@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/IDEs/Jipe/Jipe">
+  <display-name>Jipe</display-name>
+  <class>net.jesktop.jipe.Jipe</class>
+</application>

@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+
+<!--
+==============================================================================
+
+ Jesktop build file
+
+Authors:
+ Paul Hammant <Paul_Hammant@yahoo.com>
+
+Legal:
+  Copyright (c) 2001 The Apache Software Foundation. All Rights Reserved.
+
+==============================================================================
+-->
+
+<project default="main" basedir=".">
+
+  <!--
+    Give user a chance to override without editing this file
+    (and without typing -D each time he compiles it)
+  -->
+  <property file=".ant.properties"/>
+  <property file="${user.home}/.ant.properties"/>
+
+  <property name="name" value="horstscape2"/>
+  <property name="Name" value="HorstScape2 (Jesktop)"/>
+  <property name="version" value="1.0a1-dev"/>
+  <property name="year" value="2000"/>
+
+  <!--
+    these are here only for those who use jikes compiler. For other
+    developers this part makes no difference.
+  -->
+  <property name="build.compiler.emacs" value="on"/>
+  <property name="build.compiler.warnings" value="true"/>
+  <property name="build.compiler.pedantic" value="true"/>
+  <property name="build.compiler.depend" value="true"/>
+
+  <property name="debug" value="on"/>
+  <property name="optimize" value="off"/>
+  <property name="deprecation" value="on"/>
+
+  <property name="build.dir" value="build"/>
+  <property name="build.lib" value="${build.dir}/lib"/>
+  <property name="build.src" value="${build.dir}/src"/>
+  <property name="build.classes" value="${build.dir}/classes"/>
+  <property name="build.classes.lib" value="${build.dir}/classes/lib"/>
+
+  <property name="src.base" value="src"/>
+  <property name="src.dir" value="${src.base}/java"/>
+  <property name="lib.dir" value="lib"/>
+
+  <property name="dist.name" value="${Name}-${version}"/>
+  <property name="dist.dir" value="dist"/>
+  <property name="dist.blocks" value="${dist.dir}/jesktop-bar"/>
+  <property name="dist.apps" value="${dist.dir}/apps"/>
+
+
+  <property name="docs.dir" value="docs"/>
+
+
+
+  <!--
+       ===================================================================
+                                  Main target
+       ===================================================================
+  -->
+  <target name="main" depends="jar"/>
+
+  <!--
+       ===================================================================
+                                  Help on usage
+       ===================================================================
+  -->
+  <target name="usage">
+    <echo message=""/>
+    <echo message="${Name} Build file"/>
+    <echo message="-------------------------------------------------------------"/>
+    <echo message=""/>
+    <echo message=" available targets are:"/>
+    <echo message=""/>
+    <echo message="   build      --> generates the installable jar file in this dirtectory"/>
+    <echo message="   dist       --> creates a zip in the parent directory for distribution"/>
+    <echo message="   clean      --> cleans up the created directories"/>
+    <echo message="   real-clean --> cleans up all genereated files and directories"/>
+    <echo message=""/>
+    <echo message="-------------------------------------------------------------"/>
+    <echo message=""/>
+  </target>
+
+  <target name="help" depends="usage"/>
+
+
+  <!--
+       ===================================================================
+                         Prepares the build directory
+       ===================================================================
+  -->
+  <target name="prepare">
+    <tstamp/>
+    <filter token="year" value="${year}"/>
+    <filter token="version" value="${version}"/>
+    <filter token="date" value="${TODAY}"/>
+    <filter token="log" value="true"/>
+    <filter token="verbose" value="true"/>
+    <mkdir dir="${build.dir}"/>
+
+  </target>
+
+  <!--
+       ===================================================================
+                           Prepares the library code
+       ===================================================================
+   -->
+  <target name="prepare-lib" depends="prepare">
+  </target>
+
+  <!--
+       ===================================================================
+                           Prepares the source code
+       ===================================================================
+   -->
+  <target name="prepare-src" depends="prepare">
+    <mkdir dir="${build.src}"/>
+    <copy todir="${build.src}">
+      <fileset dir="${src.dir}">
+      </fileset>
+    </copy>
+
+  </target>
+
+  <!--
+       ===================================================================
+                   Check, warn and import the dependant jars
+       ===================================================================
+   -->
+  <target name="check-imports">
+    <available file="lib/jesktop-frimble.jar" property="frimblejar.present" />
+  </target>
+  <target name="warn-imports" depends="check-imports" unless="frimblejar.present">
+    <antcall target="import"/>
+  </target>
+  <target name="import">
+    <copy todir="lib">
+        <fileset dir="../API/dist/export">
+          <include name="jesktop-frimble.jar" />
+        </fileset>
+    </copy>
+  </target>
+
+
+
+  <!--
+       ===================================================================
+                        Compiles the source code
+       ===================================================================
+  -->
+  <target name="compile" depends="prepare-src,prepare-lib, warn-imports">
+<echo>hello</echo>
+    <mkdir dir="${build.classes}"/>
+
+    <javac srcdir="${build.src}"
+           destdir="${build.classes}"
+           debug="${debug}"
+           optimize="${optimize}"
+           deprecation="${deprecation}">
+      <classpath>
+        <fileset dir="${lib.dir}">
+          <include name="*.jar" />
+        </fileset>
+      </classpath>
+    </javac>
+
+  </target>
+
+
+
+
+  <!--
+       ===================================================================
+                          Creates the HorstScape2.jar file
+       ===================================================================
+  -->
+
+
+  <target name="jar" depends="compile">
+
+    <mkdir dir="dist"/>
+    <delete file="dist/Jesktop_HorstScape2.jar"/>
+    <jar jarfile="dist/Jesktop_HorstScape2.jar">
+      <fileset dir="${build.classes}">
+        <include name="**"/>
+      </fileset>
+      <zipfileset dir="src/images" prefix="images">
+        <include name="**"/>
+      </zipfileset>
+      <zipfileset dir="src/java/horstscape2" prefix="JESKTOP-INF">
+        <include name="*.xml"/>
+      </zipfileset>
+      <zipfileset dir="src/java/horstscape2" prefix="horstscape2">
+        <include name="*.gif"/>
+      </zipfileset>
+      <zipfileset dir="lib" prefix="lib">
+        <include name="webwindow.jar"/>
+      </zipfileset>
+    </jar>
+
+  </target>
+
+  <!--
+       ===================================================================
+                 Makes a distribution zip.
+       ===================================================================
+  -->
+  <target name="dist" depends="real-clean, jar">
+
+    <mkdir dir="dist"/>
+
+    <zip zipfile="dist/Jesktop_HorstScape2_FullSourceDistribution.zip"
+         basedir=".">
+      <exclude name="dist/**"/>
+      <exclude name="build/**"/>
+    </zip>
+
+    <tar tarfile="dist/Jesktop_HorstScape2_FullSourceDistribution.tar"
+         basedir=".">
+      <exclude name="dist/**"/>
+      <exclude name="build/**"/>
+    </tar>
+    <gzip zipfile="dist/Jesktop_HorstScape2_FullSourceDistribution.tar.gz"
+          src="dist/Jesktop_HorstScape2_FullSourceDistribution.tar"
+    />
+    <delete file="dist/Jesktop_HorstScape2_FullSourceDistribution.tar" />
+
+  </target>
+
+  <!--
+       ===================================================================
+                 Cleans up build and distribution directories
+       ===================================================================
+  -->
+  <target name="clean">
+    <delete dir="${build.dir}"/>
+    <delete dir="${dist.dir}"/>
+    <delete>
+      <fileset dir="." includes="**/*~" defaultexcludes="no"/>
+    </delete>
+  </target>
+
+  <!--
+       ===================================================================
+                      Cleans absolutely everything up
+       ===================================================================
+  -->
+  <target name="real-clean" depends="clean">
+    <delete file="dist/**"/>
+  </target>
+
+</project>

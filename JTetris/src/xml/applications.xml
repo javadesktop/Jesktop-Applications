@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<applications>
+  <default-application target-name="Games/JTetris"/>
+  <appxml locn="JESKTOP-INF/JTetris.xml"/>
+</applications>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<applications>
+  <default-application target-name="Tools/JPad"
+    icon32="resources/JPad.jpg"
+    icon16="resources/JPad16x16.gif"/>
+  <appxml locn="JESKTOP-INF/JPad.xml"/>
+</applications>

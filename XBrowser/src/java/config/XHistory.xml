@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE xhistory
+[<!ELEMENT xhistory (xhistorydata*)>
+<!ELEMENT xhistorydata (title, firstvisited, lastvisited, expiration, visitcount)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT firstvisited (#PCDATA)>
+<!ELEMENT lastvisited (#PCDATA)>
+<!ELEMENT expiration (#PCDATA)>
+<!ELEMENT visitcount (#PCDATA)>
+<!ATTLIST xhistorydata location CDATA #REQUIRED>]>
+
+<xhistory />
+

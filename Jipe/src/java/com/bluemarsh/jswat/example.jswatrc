@@ -1,0 +1,9 @@
+#
+# Example .jswatrc file, for JSwat Java Debugger.
+#
+
+# Create some useful command aliases.
+alias	go              resume
+alias   cont            resume
+alias	quit            exit
+alias   finish          step out

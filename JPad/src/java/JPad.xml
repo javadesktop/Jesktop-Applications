@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/TextEditors/JPad">
+  <icons icon32="resources/JPad.jpg" 
+    icon16="resources/JPad16x16.gif"/>
+  <display-name>JPad</display-name>
+  <class>net.jesktop.jpad.JPad</class>
+</application>  

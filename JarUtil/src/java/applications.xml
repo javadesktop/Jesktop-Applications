@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<applications>
+  <default-application target-name="Tools/JarUtil" 
+    icon32="ranab/JarUtil32.gif" 
+    icon16="ranab/JarUtil16.gif"/>  
+  <appxml locn="JESKTOP-INF/JarUtil.xml"/>  
+</applications>

@@ -1,0 +1,51 @@
+root [
+  comment "$Id: JSwat.preferences,v 1.1.1.1 2002-01-11 08:50:28 paul-h Exp $"
+  label "Preferences"
+  group [
+    name "view"
+    label "View"
+    option number [
+      comment "time in minutes for auto reload of source file"
+      label "Auto reload source (seconds)"
+      name reloadTime
+      value 3
+      width 5
+    ]
+
+    option boolean [
+      comment "whether source view should be maximized by default"
+      label "Maximize source view on open"
+      name maximize
+      value true
+    ]
+  ]
+
+  group [
+    name "keys"
+    label "Shortcuts"
+    comment "Shortcut key options"
+    option text [
+      label "Single Step Line"
+      name step
+      value F11
+    ]
+
+    option text [
+      label "Next Line"
+      name next
+      value F12
+    ]
+
+    option text [
+      label "Finish method"
+      name finish
+      value F10
+    ]
+
+    option text [
+      label "Set breakpoint"
+      name setBreak
+      value F9
+    ]
+  ]
+]

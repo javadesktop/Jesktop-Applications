@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<applications>
+  <default-application target-name="Tools/JFileManager"/>
+  <appxml locn="JESKTOP-INF/JFileManager.xml"/>
+</applications>

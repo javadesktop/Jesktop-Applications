@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<application type="decorator" target="Tools/Decorators/Oyoaha">
+  <icons icon32="resources/doll02.gif"
+    icon16="resources/doll02.gif" />
+  <display-name>Oyoaha Decorator</display-name>
+  <configpath>decorators/oyoaha</configpath>  
+  <class>net.jesktop.apps.decorators.oyoaha.OyoahaDecorator</class>      
+</application>

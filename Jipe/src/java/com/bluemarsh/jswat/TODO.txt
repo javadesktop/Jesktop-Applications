@@ -1,0 +1,57 @@
+JSWAT TODO
+======================================================================
+$Id: TODO.txt,v 1.1.1.1 2002-01-11 08:50:28 paul-h Exp $
+
+TODO ITEMS
+----------------------------------------------------------------------
+- Consider using a bug tracking system such as Bugzilla.
+- Re-evaluate Jakarta Ant for building the project.
+  Pros:
+  - Distribution would separate jswat.jar from docs.
+  - Make a package of just the class files in a jar and the docs.
+  - Use 'get' to pull user docs from web site into build.
+  - Can pass version number as a property from the command line and
+    have it filter the source files before compiling.
+  Cons:
+  - Doesn't take care of compiling the necessary library classes.
+  - Need to copy the required library classes into the jar file.
+  - The javadoc command doesn't work very well.
+
+
+PROBLEMS TASK LIST
+----------------------------------------------------------------------
+- Need to restart JSwat for some settings to take effect.
+- Ravid says jswat hung when connecting to a remote target.
+- can JSwat debug EJBs?
+- can JSwat debug servlets?
+- can JSwat debug applets?
+
+
+FEATURES TASK LIST
+----------------------------------------------------------------------
+- Allow dump or some new command to print collections.
+- Locals panel should show object values instead of "instance of".
+- Write the listen command and action.
+- dialog for defining macros (name field, macro text area)
+- dialog for managing all the macros (add, edit, delete)
+- dialog for managing breakpoints (add, edit, delete)
+  - button to show source code for a given breakpoint
+- Should support the shared memory connector for Win32.
+- Enable copy from message window. Enable copy/paste in command prompt.
+  Do the same for the output and input panels.
+- conditional breakpoints
+- breakpoint groups
+- skip step: skip stepping into certain classes or methods
+- Source view popup should be able to set breakpoints in non-public classes.
+- Implement commands in the COMMANDS.txt list.
+- Implement an expression parser for print/dump commands
+  (but wait, the JPDA has this as a planned future feature).
+- Provide ability to write the message window to a file.
+- Ability to pull panels into separate frames, a la gimp.
+- Custom layout manager to allow user to rearrange panels in main window.
+- Method for easily adding new panels to the main window, without
+  having to change the UIBuilder class.
+- Keep a list of the most-recently-opened source files.
+- Colorize the source code view (requires Java parsing).
+- Have class tree dynamically show methods and data members for classes.
+- Class tree should show inner classes.
