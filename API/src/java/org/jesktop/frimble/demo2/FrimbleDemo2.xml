@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<application type="normal" target="Demos/FrimbleDemo2">
-  <display-name>Frimble Demo2</display-name>
-  <class>org.jesktop.frimble.demo2.FrimbleDemo2</class>
-</application>

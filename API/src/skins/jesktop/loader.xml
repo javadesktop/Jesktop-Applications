@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-
-<!-- CVS $Revision: 1.1.1.1 $ $Date: 2002-01-11 08:18:13 $ -->
-
-<loader>
-  <processor name="xslt">
-    <parameter name="stylesheet" value="sbk:/style/stylesheets/book2project.xsl"/>
-  </processor>
-</loader>
