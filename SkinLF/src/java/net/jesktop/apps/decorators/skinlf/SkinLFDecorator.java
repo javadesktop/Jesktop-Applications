@@ -9,25 +9,19 @@ package net.jesktop.apps.decorators.skinlf;
 
 
 
-import org.jesktop.frimble.Frimble;
-import org.jesktop.api.*;
-import org.jesktop.launchable.*;
+import com.l2fprod.gui.plaf.skin.Skin;
+import com.l2fprod.gui.plaf.skin.SkinLookAndFeel;
 import org.jesktop.Decorator;
+import org.jesktop.frimble.Frimble;
+import org.jesktop.launchable.LaunchableTarget;
 
 import javax.swing.*;
-
-import java.net.*;
-
-import java.io.*;
-
-import java.util.Properties;
-
-import com.l2fprod.gui.*;
-import com.l2fprod.gui.plaf.skin.*;
-import com.l2fprod.gui.plaf.skin.impl.gtk.*;
-import com.l2fprod.gui.plaf.skin.impl.kde.*;
-import com.l2fprod.gui.plaf.skin.impl.kde2.*;
-import com.l2fprod.util.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.URL;
 
 
 /**
