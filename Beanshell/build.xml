@@ -95,8 +95,6 @@ Legal:
                classname="org.apache.tools.ant.taskdefs.StyleBook" />
     <available property="xalan.present" classname="org.apache.xalan.xpath.XPath" />
     <available property="jsse.present" classname="javax.net.ssl.SSLServerSocket" />
-    <available property="" classname="elecric.registry.Registry" />
-    <available file="lib/GLUE-STD.jar" property="glue.present"/>
     
 
   </target>
@@ -205,16 +203,7 @@ Legal:
        ===================================================================
   -->
 
-  <target name="glue1" depends="compile" if="glue.present">
-    <filter token="B-CMT" value=""/>
-    <filter token="E-CMT" value=""/>
-  </target>
-  <target name="glue2" depends="compile" unless="glue.present">
-    <filter token="B-CMT" value="&lt;!--"/>
-    <filter token="E-CMT" value="--&gt;"/>
-  </target>  
-
-  <target name="manifest-setup" depends="glue1,glue2">
+  <target name="manifest-setup">
     <mkdir dir="build/manifest"/>
     <copy todir="build/manifest" filtering="on">
       <fileset dir="src/java/net/jesktop/beanshell">
@@ -258,13 +247,8 @@ Legal:
       </zipfileset>
       
       <zipfileset dir="lib" prefix="lib">
-        <include name="bsh-bsf-1.2b1.jar"/>
-        <include name="bsh-commands-1.2b1.jar"/>
-        <include name="bsh-core-1.2b1.jar"/>
-        <include name="bsh-util-1.2b1.jar"/>
-        <include name="GLUE*"/>
-        <include name="servlet*"/>
-        <include name="jnet*"/>        
+        <include name="bsh-*"/>
+        <include name="commons-altrmi*"/>     
       </zipfileset>      
 
       <!--
