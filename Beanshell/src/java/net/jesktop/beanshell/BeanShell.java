@@ -19,15 +19,12 @@
  */
 package net.jesktop.beanshell;
 
-
-
 import bsh.EvalError;
 import bsh.Interpreter;
 import bsh.util.JConsole;
 import org.jesktop.DesktopKernel;
 import org.jesktop.frimble.Frimble;
 import org.jesktop.frimble.FrimbleAware;
-import org.jesktop.DesktopKernel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -38,7 +35,7 @@ import java.awt.*;
  *
  *
  * @author Paul Hammant <a href="mailto:Paul_Hammant@yahoo.com">Paul_Hammant@yahoo.com</a>
- * @version $Revision: 1.3 $
+ * @version $Revision: 1.4 $
  */
 public class BeanShell extends JPanel implements FrimbleAware {
 
@@ -54,16 +51,13 @@ public class BeanShell extends JPanel implements FrimbleAware {
      *
      */
     public BeanShell(DesktopKernel desktopKernel) throws EvalError {
-        interpreter.set("jesktop-desktopKernel", desktopKernel);
-
         this.setPreferredSize(new Dimension(600, 480));
-
         jc = new JConsole();
-
         this.setLayout(new BorderLayout());
         this.add(jc, BorderLayout.CENTER);
 
         interpreter = new Interpreter(jc);
+        interpreter.set("jesktop-desktopKernel", desktopKernel);
     }
 
     /**

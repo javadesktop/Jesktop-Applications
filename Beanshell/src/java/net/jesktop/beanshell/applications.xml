@@ -2,10 +2,7 @@
 <applications>
   <appxml locn="JESKTOP-INF/BeanShell.xml"/>
   <additional-jars>
-    <jar where="contained">lib/bsh-commands-1.2b3.jar</jar>
-    <jar where="contained">lib/bsh-classpath-1.2b3.jar</jar>
-    <jar where="contained">lib/bsh-core-1.2b3.jar</jar>
-    <jar where="contained">lib/bsh-util-1.2b3.jar</jar>
+    <jar where="contained">lib/bsh-2.0b1.jar</jar>
     <jar where="contained">lib/commons-altrmi-client-interfaces.jar</jar>
     <jar where="contained">lib/commons-altrmi-client-impl.jar</jar>
     <jar where="contained">lib/commons-altrmi-common.jar</jar>
