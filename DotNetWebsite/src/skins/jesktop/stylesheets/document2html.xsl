@@ -67,11 +67,20 @@
     <p class="legal">
       <xsl:apply-templates/>
       <br/>
-      <center>
-        Hosting provided by : 
-        <a href="http://sourceforge.net">
-          <img src="http://sourceforge.net/sflogo.php?group_id=43838&amp;type=1" width="88" height="31" border="0" alt="SourceForge Logo"/> 
-        </a>    
+      <center>        
+        <table>
+          <tr>
+            <td>
+              Hosting provided by : 
+              <a href="http://sourceforge.net">
+                <img src="http://sourceforge.net/sflogo.php?group_id=43838&amp;type=1" width="88" height="31" border="0" alt="SourceForge Logo"/> 
+              </a>   
+            </td>
+            <td>
+              <a href="http://sourceforge.net/projects/jesktopapps"> JesktopApps SourceForge project page</a>            
+            </td>
+          </tr>
+        </table>
       </center>      
     </p>
   </xsl:template>
