@@ -21,17 +21,15 @@ package net.jesktop.beanshell;
 
 
 
-import java.awt.*;
-import java.awt.event.*;
+import bsh.EvalError;
+import bsh.Interpreter;
+import bsh.util.JConsole;
+import org.jesktop.api.DesktopKernel;
+import org.jesktop.frimble.Frimble;
+import org.jesktop.frimble.FrimbleAware;
 
 import javax.swing.*;
-import javax.swing.event.*;
-
-import bsh.*;
-import bsh.util.*;
-
-import org.jesktop.frimble.*;
-import org.jesktop.api.*;
+import java.awt.*;
 
 
 /**
@@ -39,9 +37,9 @@ import org.jesktop.api.*;
  *
  *
  * @author Paul Hammant <a href="mailto:Paul_Hammant@yahoo.com">Paul_Hammant@yahoo.com</a>
- * @version $Revision: 1.1.1.1 $
+ * @version $Revision: 1.2 $
  */
-public class BeanShell extends JPanel implements FrimbleAware, DesktopKernelAware {
+public class BeanShell extends JPanel implements FrimbleAware {
 
     Frimble frimble;
     JConsole jc;
@@ -54,7 +52,8 @@ public class BeanShell extends JPanel implements FrimbleAware, DesktopKernelAwar
      *
      *
      */
-    public BeanShell() {
+    public BeanShell(DesktopKernel desktopKernel) throws EvalError {
+        interpreter.set("jesktop-desktopKernel", desktopKernel);
 
         this.setPreferredSize(new Dimension(600, 480));
 
@@ -80,22 +79,6 @@ public class BeanShell extends JPanel implements FrimbleAware, DesktopKernelAwar
         thread = new Thread(interpreter);
 
         thread.start();
-    }
-
-    /**
-     * Method setDesktopKernel
-     *
-     *
-     * @param desktopKernel
-     *
-     */
-    public void setDesktopKernel(DesktopKernel desktopKernel) {
-
-        try {
-            interpreter.set("jesktop-desktopKernel", desktopKernel);
-        } catch (EvalError ee) {
-            ee.printStackTrace();
-        }
     }
 
     protected void closing() {
