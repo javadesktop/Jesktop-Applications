@@ -207,8 +207,10 @@ COPYRIGHT:
         Indicates that the element requires to have an email.
 ==================================================================== -->
 <!ENTITY % email.att
-        'email                  CDATA           #REQUIRED'>
+        'email                  CDATA           #IMPLIED'>
 
+<!ENTITY % url.att
+        'url                  CDATA           #IMPLIED'>
 
 
 
@@ -221,7 +223,8 @@ COPYRIGHT:
 <!ELEMENT person EMPTY>
 <!ATTLIST person %common.att;
                  %name.att;
-                 %email.att;>
+                 %email.att;
+                 %url.att;>
 
 
 

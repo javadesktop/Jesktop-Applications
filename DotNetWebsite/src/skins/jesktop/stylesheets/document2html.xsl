@@ -34,7 +34,12 @@
           <p class="author">
             by
             <xsl:for-each select="document/header/authors/person">
-              <a href="mailto:{@email}"><xsl:value-of select="@name"/></a>
+              <xsl:if test="@email!=''">
+                <a href="mailto:{@email}"><xsl:value-of select="@name"/></a>
+              </xsl:if>
+              <xsl:if test="@url!=''">
+                <a href="{@url}"><xsl:value-of select="@name"/></a>
+              </xsl:if>              
               <xsl:if test="not(position()=last())">, </xsl:if>
             </xsl:for-each>
           </p>
