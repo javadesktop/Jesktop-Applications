@@ -141,7 +141,7 @@ Legal:
          ===================================================================
     -->
 
-    <target name="site:sshdeploy" depends="distclean" description="Deploy the generated site docs using ssh">
+    <target name="site:sshdeploy" depends="website" description="Deploy the generated site docs using ssh">
         <!-- assume user has a ~/build.properties file with maven.ssh.executable etc -->
         <property file="${user.home}/build.properties"/>
 
