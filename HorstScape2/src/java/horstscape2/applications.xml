@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <applications>
-  <appxml locn="JESKTOP-INF/Horstscape2.xml"/>
+  <appxml locn="JESKTOP-INF/HorstScape2.xml"/>
   <additional-jars>
     <jar where="contained">lib/webwindow.jar</jar>   
   </additional-jars>

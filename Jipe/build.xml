@@ -205,7 +205,7 @@ Legal:
     <copy file="src/java/applications.xml" todir="${build.classes}/JESKTOP-INF"/>
     <jar jarfile="dist/Jesktop_Jipe.jar"
          basedir="${build.classes}" manifest="src/java/manifest.mf">
-      <include name="JESKTOP-INF/applications.xml"/>
+      <include name="JESKTOP-INF/*.xml"/>
       <include name="org/**"/>
       <include name="neut/**"/>
       <include name="com/**"/>

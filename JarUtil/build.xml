@@ -210,11 +210,12 @@ Legal:
     <mkdir dir="dist"/>
 
     <copy file="${build.src}/applications.xml" todir="${build.classes}/JESKTOP-INF"/>
-    <copy file="${build.src}/ranab/JarUtil.xml" todir="${build.classes}/ranab"/>
+    <copy file="${build.src}/ranab/JarUtil.xml" todir="${build.classes}/JESKTOP-INF"/>
     <jar jarfile="dist/Jesktop_JarUtility.jar"
          basedir="${build.classes}"
          manifest="src/java/MANIFEST.MF">
       <include name="JESKTOP-INF/applications.xml"/>
+      <include name="JESKTOP-INF/JarUtil.xml"/>
       <include name="ranab/**"/>
     </jar>
     <delete file="${build.classes}/ranab/JarUtil.xml"/>
