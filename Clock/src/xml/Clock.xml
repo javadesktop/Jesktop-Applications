@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/Clock">
+	<display-name>Clock</display-name>
+	<class>net.jesktop.clock.Clock</class>
+</application>

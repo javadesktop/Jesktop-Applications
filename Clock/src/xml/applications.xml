@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<applications>
+	<default-application target-name="Tools/Clock" 
+	  icon32="net/jesktop/clock/clock/Clock.gif" 
+  	  icon16="net/jesktop/clock/clock/ClockSmall.gif"/>
+	<appxml locn="JESKTOP-INF/Clock.xml"/>
+</applications>
