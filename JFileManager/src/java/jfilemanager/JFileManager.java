@@ -10,34 +10,32 @@ import java.awt.Toolkit;
  * @since 0.1
  * @author Kai Benjamins
  * @author Thorsten Jens
- * @version $Id: JFileManager.java,v 1.1.1.1 2002-01-11 08:48:57 paul-h Exp $
+ * @version $Id: JFileManager.java,v 1.2 2004-07-25 13:01:50 paul-h Exp $
  * @see MainWindow
  */
-public class JFileManager {
+public class JFileManager extends MainWindow{
     boolean packFrame = false;
 
     //Construct the application
     public JFileManager() {
-      // TODO - thisis the wrong class to launch - Paul H
-        MainWindow frame = new MainWindow();
         //Validate frames that have preset sizes
         //Pack frames that have useful preferred size info, e.g. from their layout
         if (packFrame) {
-            frame.pack();
+            super.pack();
         } else {
-            frame.validate();
+            super.validate();
         }
         //Center the window
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        Dimension frameSize = frame.getSize();
+        Dimension frameSize = super.getSize();
         if (frameSize.height > screenSize.height) {
             frameSize.height = screenSize.height;
         }
         if (frameSize.width > screenSize.width) {
             frameSize.width = screenSize.width;
         }
-        frame.setLocation((screenSize.width - frameSize.width) / 2, (screenSize.height - frameSize.height) / 2);
-        frame.setVisible(true);
+        super.setLocation((screenSize.width - frameSize.width) / 2, (screenSize.height - frameSize.height) / 2);
+        super.setVisible(true);
     }
 
     //Main method
