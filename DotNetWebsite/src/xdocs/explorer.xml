@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>Explorer</subtitle>
+    <authors>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="Explorer">
+      <figure src="images/explorer.gif" alt="explorer"/>
+      <p>
+	Explorer is a very incomplete Windows Explorer tool. It is a vehicle for a number of things:
+      </p>
+      <ul>
+        <li>Uses mime manager (or will do) to demo a pluggable renderer for differ file types</li>
+        <li>Demos drag and drop to allow, amongst other things, drop installation of applications from jar files</li>
+        <li>For jars that have jesktop manifests, and that manifest specifies a default application, then that app can be launched by double click without installation.</li>
+        <li>It's coded in a way that makes the different view types that Windows explorer uses easy to code as it's all panel based.  The picture above shows ImageViewer (Apps) showing an image in the middle of Explorer.  Though not completely active yet, this will be a mime manager duty.  What is active is the fact that both of those apps are in different class loaders.</li>
+      </ul>
+    </s1>
+    <s1 title="License">
+      <p>
+	Explorer is licensed under Apache license and hosted with the Jesktop implementation at the <link href="http://jakarta.apache.org/avalon/cornerstone">http://jakarta.apache.org/avalon/cornerstone</link>.
+      </p>
+    </s1>
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

@@ -1,0 +1,13 @@
+
+bsh.help.launchApp = "usage: launchApp( targetName )";
+
+/*
+	By Paul Hammant : Specifically for Jesktop
+*/
+launchApp( String targetName ) {
+
+    desktopKernel = this.interpreter.get("jesktop-desktopKernel");
+    desktopKernel.getAppLauncher().launchAppByName(targetName);
+    
+}
+

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>Batik SVG Browser</subtitle>
+    <authors>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="Batik SVG Browser">
+    <figure src="images/batik.gif" alt="batik"/>
+      <p>
+	Thisis a truly impressive application from the Apache website.  It can load and present Scalable Vector Graphics (SVG) files.  The download is very big (more than 3Mb).  The fork of Batik included on this site is from the 1.0 release.
+      </p>
+      <p>
+        Batik from the Apache site is an executable jar.  This fork, however, is not, it's dependant upon Jesktop.  It could be dual mode, but the size was alreay quite big and there was a technical problem with finding the Crimson XML parser.
+      </p>
+      <p>
+	Like all jesktop.net applications, we would hope that compatability with Jesktop is rolled into the baseline.  At that moment, the fork from this site would be deleted.
+      </p>
+    </s1>
+    <s1 title="License">
+      <p>
+	Apache License : <link href="http://www.apache.org/license">http://www.apache.org/license</link>
+      </p>
+    </s1>
+    <s1 title="Main Batik Site">
+      <p>
+	Project home site : <link href="http://xml.apache.org/batik">http://xml.apache.org/batik</link>
+      </p>
+    </s1>
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

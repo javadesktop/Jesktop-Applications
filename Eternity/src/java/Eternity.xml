@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/TextEditors/Eternity">
+  <display-name>Eternity</display-name>
+  <class>net.jesktop.eternity.Eternity</class>
+  <icons icon32="images/twistedEternity24.jpg"
+    icon16="images/twistedEternity16.jpg"/>
+</application>  

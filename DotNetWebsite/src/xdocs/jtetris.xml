@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>JTetris</subtitle>
+    <authors>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="JTetris">
+      <figure src="images/jarutil_tetris.gif" alt="jar util and tetris"/>
+      <p>
+	Yang Kok Wah wrote this cool Tetris clone.  It is not under a license in it's current form - it's JTetris "free for all uses".
+      </p>
+
+    </s1>
+    <s1 title="License">
+      <p>
+	&quot;free for all uses&quot;
+      </p>
+    </s1>
+    <s1 title="Main JTetris Site">
+      <p>
+	Project home site : <link href="http://www.cyberway.com.sg/~kwyang/JTetrisApplet.html">http://www.cyberway.com.sg/~kwyang/JTetrisApplet.html</link>
+      </p>
+    </s1>
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

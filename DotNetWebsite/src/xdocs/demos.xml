@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>Demo applications</subtitle>
+    <authors>
+      <person id="WB" name="William Beebe" email="whbeebe@earthlink.net"/>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="Demos">
+      <figure src="images/demoapps.gif" alt="Demo Applications picture"/>
+      <ul>
+        <li>
+          <strong>Warped Image Manipulator.</strong>  This image-warping app by Alex Rosen was copied into Jesktop for demonstration purposes.  Porting was relatively simple from applet to Swing panel.  You can visit the <link href="http://www.axlrosen.net/">author's home page</link> for more informations on this app.
+        </li>
+        <li>
+          <strong>Julia Set Animation.</strong>  This art app by Robert Olofsson was copied into Jesktop for demonstration purposes.  Porting was relatively simple from applet to Swing panel.  The author will be contacted to determine his intentions for the app.
+        </li>
+        <li>
+          <strong>Mondrian Art Thingy.</strong> This art app by Richie Bielak was copied into Jesktop for demonstration purposes.  Porting was relatively simple from applet to Swing panel.  The author will be contacted to determine his intentions for the app.  This tool has repaint bugs, that while interesting, should be fixed in time.  They are a consequence of porting to Swing from AWT rather than a reflection on Richie's work.
+        </li>
+      </ul>
+    </s1>
+   </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

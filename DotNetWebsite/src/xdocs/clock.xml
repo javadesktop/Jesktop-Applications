@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>Clock</subtitle>
+    <authors>
+      <person id="WB" name="William Beebe" email="whbeebe@earthlink.net"/>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="Clock">
+      <figure src="images/bundledapps.gif" alt="Bundled Applications picture"/>
+      <ul>
+        <li>
+          <strong>Clock.</strong>  This clock applet by Ravinder Singh was adpated into Jesktop by Paul and enhanced to include a calendar by William.  Pictred here with some other applications.
+        </li>
+      </ul>
+    </s1>
+   </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

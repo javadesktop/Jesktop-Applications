@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>Eternity</subtitle>
+    <authors>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="Eternity">
+      <figure src="images/eternity.gif" alt="eternity"/>
+      <p>
+	Eternity is a text editor written by Dave Seaton with good search capabilities.
+      </p>
+    </s1>
+    <s1 title="License">
+      <p>
+	Eternity is GPL.
+      </p>
+    </s1>
+    <s1 title="Main Eternity Site">
+      <p>
+        Please also take a look at the main site for Eternity <link href="http://www.goose24.org/software/eternity.shtml">http://www.goose24.org/software/eternity.shtml</link>.
+      </p>
+    </s1>
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

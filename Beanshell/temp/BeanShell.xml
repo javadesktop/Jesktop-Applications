@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<application type="normal" target="Tools/Shells/BeanShell">
+  <display-name>BeanShell</display-name>
+  <class>net.jesktop.beanshell.BeanShell</class>
+  <application-config-file>JESKTOP-INF/BeanShell.xml</application-config-file>
+  <!-- Icon author is William Beebe, from PJE project -->
+  <icons icon32="net/jesktop/beanshell/Shell32.gif"
+    icon16="net/jesktop/beanshell/Shell16.gif" />
+</application>

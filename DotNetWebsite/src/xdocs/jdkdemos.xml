@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>JDK Demo applications</subtitle>
+    <authors>
+      <person id="WB" name="William Beebe" email="whbeebe@earthlink.net"/>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="Demo applications distributed with Sun's Java Development Kit.">
+      <figure src="images/jdkdemoapps.gif" alt="JDK Demo Applications picture"/>
+      <ul>
+        <li>
+          <strong>SwingSet2 Demo.</strong>  This demo is nearly fully compatible with Jesktop.  It's only problems are that it does not have an empty constructor, nor does it have the applications manifest.  These have been overcome with an adapter class supplied with Jesktop. See package org.jesktop.demos.jdksupport.
+        </li>
+        <li>
+          <strong>JavaSound Demo.</strong>  The same problems as above with the same solution.
+        </li>
+      </ul>
+    </s1>
+   </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

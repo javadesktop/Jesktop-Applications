@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+
+<!--
+==============================================================================
+
+ Jesktop.net website build file
+
+Authors:
+ Paul Hammant <Paul_Hammant@yahoo.com>
+
+Legal:
+  Copyright (c) 2001 The Apache Software Foundation. All Rights Reserved.
+
+==============================================================================
+-->
+
+<project name="dot_net_website" default="xdocs" basedir=".">
+
+  <target name="prepare">
+    <tstamp/>
+    <filter token="date" value="${TODAY}"/>
+    <mkdir dir="build"/>
+    <mkdir dir="build/src"/>
+  </target>
+
+  <target name="xdocs" depends="prepare">
+      <ant antfile="src/make/build-docs.xml" target="xdocs" />
+  </target>
+
+
+  <target name="import">
+    <mkdir dir="dist"/>
+    <mkdir dir="dist/apps"/>
+    <mkdir dir="dist/apps_with_source"/>
+    <mkdir dir="dist/apps_with_source/zips"/>
+    <mkdir dir="dist/apps_with_source/targzips"/>
+
+
+    <copy todir="dist/apps" flatten="true">
+      <fileset dir="..">
+        <include name="**/dist/Jesktop_*"/>
+        <exclude name="DotNetWebsite/**"/>
+        <exclude name="Jesktop/**"/>
+        <exclude name="**/*FullSourceDistribution.zip"/>
+        <exclude name="**/*FullSourceDistribution.tar.gz"/>
+      </fileset>
+    </copy>
+
+    <copy todir="dist/apps_with_source/zips" flatten="true">
+      <fileset dir="..">
+        <include name="*/dist/Jesktop_*FullSourceDistribution.zip"/>
+        <exclude name="DotNetWebsite/**"/>
+        <exclude name="Jesktop/**"/>
+      </fileset>
+    </copy>
+
+    <copy todir="dist/apps_with_source/targzips" flatten="true">
+      <fileset dir="..">
+        <include name="*/dist/Jesktop_*FullSourceDistribution.tar.gz"/>
+        <exclude name="DotNetWebsite/**"/>
+        <exclude name="Jesktop/**"/>
+      </fileset>
+    </copy>
+    
+    <antcall target="dl-page">
+      <param name="dir" value="dist/apps_with_source/targzips"/>
+      <param name="title" value="Jesktop Applications with source for Unix"/>
+    </antcall>
+    <antcall target="dl-page">
+      <param name="dir" value="dist/apps_with_source/zips"/>
+      <param name="title" value="Jesktop Applications with source for Windows"/>
+    </antcall>
+    <antcall target="dl-page">
+      <param name="dir" value="dist/apps"/>
+      <param name="title" value="Applications directly installable into Jesktop"/>
+    </antcall>
+
+
+  </target>
+
+    <target name="dl-page">
+
+        <script language="javascript"><![CDATA[           
+
+            var dir = dot_net_website.getProperty("dir")
+            var fos = java.io.FileOutputStream("index.tmp");
+            var ps = java.io.PrintStream(fos);          
+            ps.println("<html><head>");
+            ps.println("<title>" + dot_net_website.getProperty("title") + "</title>");
+            ps.println("</head><body>");
+            ps.println("<h1>" + dot_net_website.getProperty("title") + "</h1>");
+            ps.println("<table>");
+            var files = java.io.File(dir);            
+	    var distFiles    =   files.listFiles();
+
+	    for (var count = 0; count < distFiles.length;count++)
+	    {
+	        var distFile = distFiles[count];
+		ps.print("<tr>");
+		ps.print("<td>");
+		ps.print("<a href=\u0022" + distFiles[count].getName() + "\u0022>" + distFiles[count].getName() + "</a>");
+		ps.print("</td>");
+		ps.print("<td>");
+		ps.print("" + java.lang.Long(distFile.length() /1024).intValue() + "Kb");
+		ps.print("</td>");
+		ps.println("</tr>");
+	    }
+
+            ps.println("</table></body></html>");
+            ps.close();
+            fos.close();
+        ]]></script>
+
+        <copy file="index.tmp" tofile="${dir}/index.html"/>
+
+    </target> 
+
+
+  <target name="clean">
+    <delete dir="build"/>
+    <delete dir="dist"/>
+    <delete>
+      <fileset dir="." includes="**/*~" defaultexcludes="no"/>
+    </delete>
+  </target>
+
+  <target name="website" depends="clean, xdocs, import">
+    <copy todir="dist">
+      <fileset dir="build/docs">
+        <include name="**"/>
+      </fileset>
+    </copy>
+  </target>
+
+
+
+</project>

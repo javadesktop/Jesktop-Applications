@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<book software="Jesktop" title="Jesktop Documentation" copyright="@year@ The Apache Software Foundation">
+  <page id="index" label="Index" source="index.xml"/>
+  <page id="clock" label="Clock" source="clock.xml"/>
+  <page id="demos" label="Demos" source="demos.xml"/>
+  <page id="batik" label="Batik" source="batik.xml"/>
+  <page id="beanshell" label="Beanshell" source="beanshell.xml"/>
+  <page id="eternity" label="Eternity" source="eternity.xml"/>
+  <page id="explorer" label="Explorer" source="explorer.xml"/>
+  <page id="horstscape" label="HorstScape" source="horstscape.xml"/>
+  <page id="horstscape2" label="HorstScape2" source="horstscape2.xml"/>
+  <page id="jarutil" label="JarUtil" source="jarutil.xml"/>
+  <page id="jcalculator" label="JCalculator" source="jcalculator.xml"/>
+  <page id="jcdsee" label="JCDSee" source="jcdsee.xml"/>
+  <page id="jdkdemos" label="JDKDemos" source="jdkdemos.xml"/>
+  <page id="jfilemanager" label="JFileManager" source="jfilemanager.xml"/>
+  <page id="jipe" label="Jipe" source="jipe.xml"/>
+  <page id="jpad" label="JPad" source="jpad.xml"/>
+  <page id="jtetris" label="JTetris" source="jtetris.xml"/>
+  <page id="oyoaha" label="Oyoaha Decorator" source="oyoaha.xml"/>
+  <page id="skinlf" label="Skin Look And Feel Decorator" source="skinlnf.xml"/>
+  <page id="textpad" label="Textpad" source="textpad.xml"/>
+  <page id="xbrowser" label="XBrowser" source="xbrowser.xml"/>
+</book>

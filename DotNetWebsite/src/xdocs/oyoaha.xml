@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>Oyoaha Decorator</subtitle>
+    <authors>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="Oyoaha Decorator">
+      <figure src="images/oyoaha.gif" alt="oyoaha"/>
+      <p>
+	The Oyoaha look and feel for Swing has been adapted to become a pluggable decorator.  The control panel for the decorator allows a number of configurations for appearance.  Some are merely themes from Metal Look and Feel, some use Oyoaha's '.otm' scheme for pluggable looks.  One, anidaisy, shows an alpha channel look and feel, with fairly impressive animation buttons.
+      </p>
+      <p>
+        There is still plenty to do for Oyoaha:
+      </p>
+      <ol>
+        <li>Use Radio buttons in the configration tool, rather than check boxes</li>
+        <li>Allow loadable .otm files.</li>
+      </ol>
+    </s1>
+    <s1 title="License">
+      <p>
+	Decorator parts - Apache License.<br/>Core OYOAHA jar - commercial development available for no-fee use.
+      </p>
+    </s1>
+    <s1 title="Main Oyoaha Site">
+      <p>
+	Project home site : <link href="http://www.oyoaha.com">http://www.oyoaha.com</link>
+      </p>
+    </s1>
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

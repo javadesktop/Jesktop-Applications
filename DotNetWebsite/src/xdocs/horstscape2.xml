@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>HorstScape2</subtitle>
+    <authors>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="HorstScape2">
+      <figure src="images/webwindow.gif" alt="webwindow"/>
+      <p>
+	Like Horstscape, Horstscape2 uses a jar file from Horst's website.  This time it is webwindow.jar and Horst has given permission for it to be distributed with Jesktop.  Apart from being a general update, this component is a self limit demo of Horst's commercial component.  After 15 mins it displays a dialog warning of its demo status and then disables itself.  Horst has givn permission for us to distribute the webwindow jar file with this forked version of his browser.
+      </p>
+    </s1>
+    <s1 title="License">
+      <p>
+	Horst's Browser source is free for reuse, but the rendering component is commercial for anything other than a 15 minute demo.
+      </p>
+    </s1>
+    <s1 title="Main HorstScape2 Site">
+      <p>
+	Project home site : <link href="http://home.earthlink.net/~hheister/">http://home.earthlink.net/~hheister/</link>
+      </p>
+    </s1>
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

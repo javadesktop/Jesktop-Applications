@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<applications>
+  <appxml locn="JESKTOP-INF/BeanShell.xml"/>
+  <additional-jars>
+    <jar where="contained">lib/bsh-bsf-1.2b1.jar</jar>   
+    <jar where="contained">lib/bsh-commands-1.2b1.jar</jar>   
+    <jar where="contained">lib/bsh-core-1.2b1.jar</jar>   
+    <jar where="contained">lib/bsh-util-1.2b1.jar</jar>
+    @B-CMT@
+    <jar where="contained">lib/GLUE-STD.jar</jar>
+    <jar where="contained">lib/servlet.jar</jar>
+    @E-CMT@
+  </additional-jars>    
+</applications>

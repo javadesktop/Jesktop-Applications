@@ -1,0 +1,13 @@
+
+bsh.help.getAppList = "usage: getAppList(), returns array of strings";
+
+/*
+	By Paul Hammant : Specifically for Jesktop
+*/
+String[] getAppList() {
+
+    desktopKernel = this.interpreter.get("jesktop-desktopKernel");
+    return desktopKernel.getAppLauncher().getAllAppList();
+    
+}
+

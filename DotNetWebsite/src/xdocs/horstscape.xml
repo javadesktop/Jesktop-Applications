@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>HorstScape</subtitle>
+    <authors>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="HorstScape">
+      <figure src="images/htmlwindow.gif" alt="htmlwindow"/>
+      <p>
+        Note - HTMLWindow.jar has been obsoleted from Horst Hiestermann's site (June 2001).  You can't download the component any more....
+      </p>
+      <p>
+	HorstScape is a browser also ported during the summer of 2000 to PJE.  Horst
+	Heistermann's excellent HTMLWindow api is wrapped by his own
+	demonstration browser "HorstScape".  We took the source for the browser and
+	with his permission forked the browser source so that we could get it
+	working inside PJE and now Jesktop.  HTMLWindow is commercial software
+	(we hope Horst makes his million from it as it's very good).  As such, it
+	is unsuitable for a long term choice of browser inside Jesktop.  We
+	don't distribute the HTMLWindow jar as it is commercial, but there is a
+	readme if you want to see it running.  
+      </p>
+      <p>
+        In January 2001, Horst released a new product called WebWindow that is
+        commercial and is doubtless based in his previous body of work.  We wish
+        him every sucess with that.
+      </p>
+    </s1>
+    <s1 title="License">
+      <p>
+	Horst's Browser source is free for reuse, but the rendering component is (or was) commercial.
+      </p>
+    </s1>
+    <s1 title="Main HorstScape Site">
+      <p>
+	Project home site : <link href="http://home.earthlink.net/~hheister/">http://home.earthlink.net/~hheister/</link>
+      </p>
+    </s1>
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>

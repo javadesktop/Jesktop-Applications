@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<applications>
+  <default-application target-name="Tools/Eternity"
+    icon32="images/twistedEternity24.jpg"
+    icon16="images/twistedEternity16.jpg"/>
+  <appxml locn="JESKTOP-INF/Eternity.xml"/>
+  <additional-jars>
+    <jar where="contained">lib/gnu-regexp-1.1.3.jar</jar>   
+  </additional-jars>  
+</applications>

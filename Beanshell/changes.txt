@@ -1,0 +1,22 @@
+
+Original software by Patrick Niemeyer (pat@pat.net) and 
+contributors on to the beanshell.org effort.
+
+============================================================
+
+Changes to Beanshell upon forking into Jesktop (July 2000)
+Forked by Paul Hammant.  
+
+1) Repackaging : none 
+
+2) One protected method made public (I forget which!)
+
+3) new java files created, BeanShell.java and Workspaces.java
+   copied from bsh scrits of the same name.
+
+If Pat and the beanshell folks, want to continue with Jesktop 
+compatibility then they are more than welcome to take back 
+the changesm integrate and this fork would dissapear. - PH
+
+=============================================================
+

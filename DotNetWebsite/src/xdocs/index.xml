@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE document SYSTEM "./dtd/document-v10.dtd">
+
+<document>
+  <header>
+    <title>Jesktop.net - Free/Open Applications</title>
+    <subtitle>Ported Applications</subtitle>
+    <authors>
+      <person id="WB" name="William Beebe" email="whbeebe@earthlink.net"/>
+      <person id="PH" name="Paul Hammant" email="Paul_Hammant@yahoo.com"/>
+    </authors>
+    <notice>
+      Jesktop documentation is under construction.  Everything you
+      can find outside this page is to be considered obsolete.
+    </notice>
+  </header>
+  <body>
+    <s1 title="Sister Site &amp; Jesktop Application">  
+      <p>
+         <strong>Interface</strong><br/>
+      	 Jesktop's Interface is developed/downloadable from the <link href="http://www.jesktop.org">http://www.jesktop.org</link> site.  
+      </p>
+      <p>
+         <strong>Implementation</strong><br/>
+      	 Jesktop's implementation is part of Apache's Avalon project <link href="http://jakarta.apache.org/avalon/cornerstone">http://jakarta.apache.org/avalon/cornerstone</link> site.  
+      </p>
+      
+      
+    </s1>    
+    <s1 title="Ported Applications">
+      <p>
+      	Jesktop has had a number of applications ported to it.  There are a multitude of licenses (some open or free, some not) for these applications.  The point about these ported applications is not to start separate forks of some well known apps, but to prove that Jesktop can support many useful apps and to encourage the main app maintainers to continue with Jesktop compatability.
+      </p>
+      <p>
+      	Apps in installable form (point SimpleInstaller at the appropriate URL) are in <link href="apps">here</link>
+      </p>
+      <figure src="images/start01.gif" alt="start01"/>
+      <p>
+      	Source in zip form is in <link href="apps_with_source/zips">here</link>.  Source in tar.gz form is in <link href="apps_with_source/targzips">here</link>.  The problem with all source releases is that they contain a full copy of the jars used by ant for building.  In some cases that turns a 17Kb download into a 1.4Mb one.  If bandwith is an issue for you, or you're likely to really want to play with the apps and their source, you'd be better using Perforce to sync with the depot.  See <link href="http://www.jesktop.org/perforce.html">perforce and depot details</link>
+      </p>
+    </s1>
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The Jesktop Project All rights reserved.
+    </legal>
+  </footer>
+</document>
