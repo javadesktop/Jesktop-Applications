@@ -9,19 +9,15 @@ package net.jesktop.apps.decorators.oyoaha;
 
 
 
+import org.jesktop.config.ConfigHelper;
+import org.jesktop.config.ConfigManager;
+import org.jesktop.config.ObjConfiglet;
+
 import javax.swing.*;
-
-import java.awt.event.*;
 import java.awt.*;
-
-import java.util.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
-
-import org.jesktop.api.*;
-import org.jesktop.config.*;
-
-
-import com.oyoaha.swing.plaf.oyoaha.*;
 
 
 /**
@@ -32,9 +28,8 @@ import com.oyoaha.swing.plaf.oyoaha.*;
  * @version V1.0
  */
 public class OyoahaDecoratorConfig extends JPanel
-        implements DesktopKernelAware, ObjConfiglet, ActionListener {
+        implements ObjConfiglet, ActionListener {
 
-    private DesktopKernel desktopKernel;
     private final OyoahaCheckBox[] checkboxes = new OyoahaCheckBox[] {
         new OyoahaCheckBox("Metal / Blue #1", "themes/blue1.theme"),
         new OyoahaCheckBox("Metal / Font #2", "themes/font2.theme"),
@@ -45,16 +40,16 @@ public class OyoahaDecoratorConfig extends JPanel
         new OyoahaCheckBox("Slushy", "otms/slushy.otm"),
         new OyoahaCheckBox("Tgang", "otms/tgang.otm")
     };
-    private final JCheckBox motifLnF = new JCheckBox("Motif Look and Feel");
     private Config config;
-    private ConfigManager cm;
+    private ConfigManager configManager;
 
     /**
      * Constructor TestDecoratorConfig
      *
      *
      */
-    public OyoahaDecoratorConfig() {
+    public OyoahaDecoratorConfig(ConfigManager configManager) {
+        this.configManager = configManager;
 
         this.setLayout(new FlowLayout());
 
@@ -73,17 +68,6 @@ public class OyoahaDecoratorConfig extends JPanel
      */
     public Object getConfig() {
         return config;
-    }
-
-    /**
-     * Method setConfigManager
-     *
-     *
-     * @param manager
-     *
-     */
-    public void setConfigManager(ConfigManager manager) {
-        this.cm = manager;
     }
 
     /**
@@ -131,22 +115,9 @@ public class OyoahaDecoratorConfig extends JPanel
             } else {
                 config.oyoahaConfigFile = ocb.fileName;
 
-                cm.notifyUpdated(this);
+                configManager.notifyUpdated(this);
             }
         }
-    }
-
-    // Javadocs will automatically import from interface.
-
-    /**
-     * Method setDesktopKernel
-     *
-     *
-     * @param desktopKernel
-     *
-     */
-    public void setDesktopKernel(DesktopKernel desktopKernel) {
-        this.desktopKernel = desktopKernel;
     }
 
     public void propertyChange( PropertyChangeEvent event ) {
@@ -160,7 +131,7 @@ public class OyoahaDecoratorConfig extends JPanel
      *
      *
      * @author Paul Hammant <a href="mailto:Paul_Hammant@yahoo.com">Paul_Hammant@yahoo.com</a>
-     * @version $Revision: 1.1.1.1 $
+     * @version $Revision: 1.2 $
      */
     private class OyoahaCheckBox extends JCheckBox {
 

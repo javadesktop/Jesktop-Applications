@@ -142,6 +142,17 @@ public class XHTMLEditorKit extends HTMLEditorKit
 				((XCustomRenderer)myEditor).showAppletStatusInternal(status);
 		}
 
+        public Iterator getStreamKeys() {
+            return null;
+        }
+
+        public InputStream getStream(String key) {
+            return null; 
+        }
+
+        public void setStream(String key, InputStream stream) throws IOException {
+        }
+
 		void showAppletLifeCycle(Applet applet, int status)
 		{
 			if( myEditor instanceof XCustomRenderer )

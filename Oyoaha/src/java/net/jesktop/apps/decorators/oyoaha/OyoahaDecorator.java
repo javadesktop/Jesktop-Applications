@@ -7,8 +7,6 @@
  */
 package net.jesktop.apps.decorators.oyoaha;
 
-
-
 import org.jesktop.frimble.Frimble;
 import org.jesktop.api.*;
 import org.jesktop.config.*;
@@ -35,7 +33,6 @@ import java.beans.PropertyChangeEvent;
  */
 public class OyoahaDecorator implements Decorator, ObjConfigurable, PropertyChangeListener {
 
-    private DesktopKernel desktopKernel;
     private Config config = new Config();
     private OyoahaLookAndFeel lnf;
 
@@ -68,21 +65,6 @@ public class OyoahaDecorator implements Decorator, ObjConfigurable, PropertyChan
         }
     }
 
-    // Javadocs will automatically import from interface.
-
-    /**
-     * Method setDesktopKernel
-     *
-     *
-     * @param desktopKernel
-     *
-     */
-    public void setDesktopKernel(DesktopKernel desktopKernel) {
-        this.desktopKernel = desktopKernel;
-    }
-
-    // Javadocs will automatically import from interface.
-
     /**
      * Method end
      *
@@ -98,7 +80,7 @@ public class OyoahaDecorator implements Decorator, ObjConfigurable, PropertyChan
     /**
      * Refer Decrorator java docs.
      */
-    public void initDecoratation(Frimble frimble, LaunchableTarget launchableTarget) {
+    public void decorate(Frimble frimble, LaunchableTarget launchableTarget) {
 
         String targetName = "default";
 

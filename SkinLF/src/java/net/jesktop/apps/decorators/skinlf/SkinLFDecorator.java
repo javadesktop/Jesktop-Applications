@@ -41,8 +41,6 @@ public class SkinLFDecorator implements Decorator {
 
     final static String theTheme = "@Theme@";
     private String skinDir = "SkinLnF" + File.separator;
-    private DesktopKernel desktopKernel;
-    private SkinLookAndFeel lnf;
 
     /**
      * Constructor SkinLFDecorator
@@ -53,21 +51,6 @@ public class SkinLFDecorator implements Decorator {
         unpackThemePack(theTheme.toLowerCase());
         doDecoration();
     }
-
-    // Javadocs will automatically import from interface.
-
-    /**
-     * Method setDesktopKernel
-     *
-     *
-     * @param desktopKernel
-     *
-     */
-    public void setDesktopKernel(DesktopKernel desktopKernel) {
-        this.desktopKernel = desktopKernel;
-    }
-
-    // Javadocs will automatically import from interface.
 
     /**
      * Method end
@@ -86,7 +69,7 @@ public class SkinLFDecorator implements Decorator {
     /**
      * Refer Decrorator java docs.
      */
-    public void initDecoratation(Frimble frimble, LaunchableTarget launchableTarget) {
+    public void decorate(Frimble frimble, LaunchableTarget launchableTarget) {
 
         String targetName = "default";
 
