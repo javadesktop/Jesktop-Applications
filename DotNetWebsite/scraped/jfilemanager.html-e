@@ -1,0 +1,46 @@
+<HTML><HEAD><TITLE>Jesktop.net - Free/Open Applications</TITLE><LINK href="resources/simple.css" rel="stylesheet" title="Simple Style" type="text/css"></HEAD><BODY><TABLE border="0" cellpadding="0" cellspacing="0"><TR><TD width="100%"><P class="title"><STRONG>Jesktop.net - Free/Open Applications</STRONG><BR><EM>JFileManager</EM></P></TD><TD valign="top"><CENTER><IMG src="resources/jesktop-banner.jpg"><BR><IMG src="resources/TheJavaDesktop.jpg"></CENTER></TD></TR></TABLE><P class="author">
+            by
+            <A href="http://www.paulhammant.com">Paul Hammant</A></P><TABLE border="1" cellspacing="0"><TR><TD bgcolor="#f0f0f0" valign="top" width="20%"><DIV class="book">
+  <A href="index.html">Index</A><BR>
+  <A href="clock.html">Clock</A><BR>
+  <A href="demos.html">Demos</A><BR>
+  <A href="batik.html">Batik</A><BR>
+  <A href="beanshell.html">Beanshell</A><BR>
+  <A href="eternity.html">Eternity</A><BR>
+  <A href="explorer.html">Explorer</A><BR>
+  <A href="horstscape.html">HorstScape</A><BR>
+  <A href="horstscape2.html">HorstScape2</A><BR>
+  <A href="jarutil.html">JarUtil</A><BR>
+  <A href="javaexplorer.html">JavaExplorer</A><BR>
+  <A href="jcalculator.html">JCalculator</A><BR>
+  <A href="jcdsee.html">JCDSee</A><BR>
+  <A href="jdkdemos.html">JDKDemos</A><BR>
+  JFileManager<BR>
+  <A href="jipe.html">Jipe</A><BR>
+  <A href="jpad.html">JPad</A><BR>
+  <A href="jtetris.html">JTetris</A><BR>
+  <A href="oyoaha.html">Oyoaha Decorator</A><BR>
+  <A href="skinlf.html">Skin Look And Feel Decorator</A><BR>
+  <A href="textpad.html">Textpad</A><BR>
+  <A href="xbrowser.html">XBrowser</A><BR>
+</DIV></TD><TD valign="top" width="80%"><DOCUMENT>
+  
+  <BODY>
+    <H1>JFileManager</H1><DIV class="s1">
+      <IMG alt="jfilemanager" class="figure" src="images/jfilemanager.gif">
+      <P>
+	JFileManager (TODO)....
+      </P>
+    </DIV>
+    <H1>License</H1><DIV class="s1">
+      <P>
+	GPL v2
+      </P>
+    </DIV>
+  </BODY>
+  
+</DOCUMENT></TD></TR></TABLE><P class="legal">
+      Copyright (c) 2001 The Jesktop Project All rights reserved.
+    <BR><CENTER><TABLE><TR><TD>
+              Hosting provided by : 
+              <A href="http://sourceforge.net"><IMG alt="SourceForge Logo" border="0" height="0" src="" width="0"></A></TD><TD><A href="http://sourceforge.net/projects/jesktopapps"></A></TD></TR></TABLE></CENTER></P></BODY></HTML>
